@@ -16,7 +16,7 @@ body {
 		decoration: none;
 		align: center;
 	}
-	@include text-shadow(2px 2px 0 #FFF, 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
+	@include text-shadow(2px 2px 0 #F6EFEF, 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
 	color: #900;
 	background: #F6EFEF;
 	border-bottom: 2px dotted darken(#F6EFEF, 5%);
@@ -24,6 +24,7 @@ body {
 	&:hover {
 		background: darken(#F6EFEF, 2%);
 		border-bottom: 2px dotted darken(#F6EFEF, 10%);
+		@include text-shadow(2px 2px 0 darken(#F6EFEF, 2%), 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
 	}
 }
 
