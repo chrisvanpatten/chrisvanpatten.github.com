@@ -1,6 +1,6 @@
 application:
   name: chrisvanpatten
-  repo: git://github.com/vanpattenmedia/vanpattenmedia.com.git
+  repo: git://github.com/chrisvanpatten/chrisvanpatten.com.git
   user: chrisvanpatten
   group: chrisvanpatten-sitewriters
   domain: chrisvanpatten.com
