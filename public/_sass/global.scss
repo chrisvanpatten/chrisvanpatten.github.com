@@ -1,4 +1,138 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "rgbapng";
+@import "compass/typography/text";
+
 body {
-	font-family: sans-serif;
-	color: red;
+	background: #FCF9F9;
+}
+
+#logo {
+	display: block;
+	padding: 70px 10px;
+	font: 60px 'Emblema One';
+	letter-spacing: -1px;
+	text: {
+		decoration: none;
+		align: center;
+	}
+	@include text-shadow(2px 2px 0 #FFF, 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
+	color: #900;
+	background: #F6EFEF;
+	border-bottom: 2px dotted darken(#F6EFEF, 5%);
+
+	&:hover {
+		background: darken(#F6EFEF, 2%);
+		border-bottom: 2px dotted darken(#F6EFEF, 10%);
+	}
+}
+
+#posts {
+	li {
+		margin: 0 0 40px;
+
+		h2 {
+			font: 28px/1.2 'Cabin', sans-serif;
+			margin: 0 0 8px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+
+			&:hover {
+				background: #EEE;
+			}
+		}
+
+		span {
+			display: block;
+			font: 14px monospace;
+			color: #999;
+		}
+	}
+}
+
+#pages {
+	display: none;
+}
+
+#content {
+	max-width: 700px;
+	width: 70%;
+	min-width: 300px;
+	margin: 0 auto;
+	padding: 70px 10px 100px;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Cabin', sans-serif;
+	}
+}
+
+#post {
+	font: 20px/2 'Open Sans', sans-serif;
+
+	h2, h3, h4, h5, h6 {
+		margin: 50px 0 0;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	p {
+		margin: 30px 0 0;
+		text-align: justify;
+	}
+
+	code {
+		font-family: monospace;
+	}
+
+	strong {
+		font-weight: bold;
+	}
+
+	em {
+		font-style: italic;
+	}
+
+	code {
+		background: #EFEFEF;
+		border: 1px solid #CCC;
+		padding: 2px 3px;
+		@include border-radius(3px);
+		@include nowrap;
+	}
+
+	ol, ul {
+		margin: 20px 0 0;
+
+		li {
+			margin: 10px 0 0 40px;
+		}
+	}
+
+	ol {
+		list-style: decimal-leading-zero;
+	}
+
+	ul {
+		list-style: disc;
+	}
+
+	blockquote {
+		padding: 0 20px 0 18px;
+		margin-left: 20px;
+		border-left: 2px dotted darken(#F6EFEF, 5%);
+		font-style: italic;
+	}
 }

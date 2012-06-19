@@ -2,8 +2,9 @@
 <html>
 	{% include head.html %}
 	<body>
-
-		{{ content }}
-
+		<div class="container">
+			<header id="header">{% include header.html %}</header>
+			<div id="content">{{ content }}</div>
+		</div>
 	</body>
 </html>

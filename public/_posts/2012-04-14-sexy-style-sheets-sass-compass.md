@@ -20,9 +20,9 @@ Considering the fairly dense nature of the material and the speed I had to rush 
 
 I left out three major things in the discussion (but touched briefly on one of them):
 
-  1. [Partials](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#partials)
-  2. [Sass vs. SCSS syntax](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#syntax)
-  3. Getting started (installation [for Sass](http://sass-lang.com/download.html) and [for Compass](http://compass-style.org/install/))
+1.  [Partials](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#partials)
+2.  [Sass vs. SCSS syntax](http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#syntax)
+3.  Getting started (installation [for Sass](http://sass-lang.com/download.html) and [for Compass](http://compass-style.org/install/))
 
 I've linked to some resources above that will guide you to the right places for beginning your own exploration of those topics.
 

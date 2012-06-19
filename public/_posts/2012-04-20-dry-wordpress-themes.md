@@ -19,13 +19,13 @@ Sass and Compass have helped in the style sheet department ([see my introduction
 
 Well, a WordPress theme generally has a few base items:
 
-  * index.php
-  * page.php
-  * single.php
-  * header.php
-  * footer.php
-  * page-{your-template}.php
-  * etc.
+*   index.php
+*   page.php
+*   single.php
+*   header.php
+*   footer.php
+*   page-{your-template}.php
+*   etc.
 
 "So where's the problem?" you might ask. "Your header and footer are included in every file, and that solves every problem." Yes, but I have one requirement that stumps things: I want no tags spanning across files.
 
