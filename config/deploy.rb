@@ -38,7 +38,7 @@ end
 # Set up some VPM-specific tasks
 before "deploy:setup", "puppet:show"
 after "deploy:setup", "vpm:fix_setup_ownership"
-after "deploy", "vpm:fix_deploy_ownership"
+after "deploy", "vpm:fix_deploy_ownership", "jekyll:hyde"
 
 namespace :puppet do
   desc "Set up puppet"
@@ -65,5 +65,13 @@ namespace :vpm do
   task :fix_deploy_ownership, :roles => :app do
     run "#{sudo} chown --dereference -RL #{app_user}:#{app_group} #{deploy_to}/current/public"
     run "#{sudo} chmod -R g+s #{deploy_to}/current/public"
+  end
+end
+
+namespace :jekyll do
+  desc "Put Jekyll in its place"
+  task :hyde, :roles => :app do
+    system("cd public && compass compile -e production --force && jekyll && cd ..")
+    upload("./public/_site", "#{current_release}/public", :via => :scp, :recursive => :true)
   end
 end
