@@ -7,8 +7,8 @@ default_run_options[:pty] = true
 set :app_stage,  "staging"
 
 # nginx config
-project  = YAML.load_file("./config/project.yml")
-set :app_domain,  "#{app_stage}." + project['application']['domain']
+project = YAML.load_file("./config/project.yml")
+set :app_domain, "#{app_stage}." + project['application']['domain']
 
 # Deploy path
 set :deploy_to, "/home/#{fetch(:app_user)}/#{fetch(:app_domain)}"
