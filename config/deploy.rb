@@ -8,6 +8,7 @@ set :stages, ["staging", "production"]
 set :default_stage, "staging"
 
 # This site...
+project = YAML.load_file("./config/project.yml")
 set :application, project['application']['name']
 set :repository,  project['application']['repo']
 set :app_name,    fetch(:application)
@@ -36,8 +37,8 @@ end
 
 # Set up some VPM-specific tasks
 before "deploy:setup", "puppet:show"
-after "deploy:setup", "vpm:fix_setup_ownership", "vpm:upload_db_cred"
-after "deploy", "vpm:fix_deploy_ownership", "vpm:symlink_db_cred"
+after "deploy:setup", "vpm:fix_setup_ownership"
+after "deploy", "vpm:fix_deploy_ownership"
 
 namespace :puppet do
   desc "Set up puppet"
@@ -64,16 +65,5 @@ namespace :vpm do
   task :fix_deploy_ownership, :roles => :app do
     run "#{sudo} chown --dereference -RL #{app_user}:#{app_group} #{deploy_to}/current/public"
     run "#{sudo} chmod -R g+s #{deploy_to}/current/public"
-  end
-
-  desc "Upload database credentials to the shared directory"
-  task :upload_db_cred, :roles => :app do
-    run "mkdir #{shared_path}/config"
-    upload("./config/database.yml", "#{shared_path}/config/database.yml")
-  end
-
-  desc "Symlink database credentials to the current release directory"
-  task :symlink_db_cred, :roles => :app do
-    run "#{sudo} ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
 end

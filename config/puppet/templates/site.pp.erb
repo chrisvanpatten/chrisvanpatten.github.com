@@ -82,6 +82,12 @@ user { "chris":
 	membership => minimum,
 }
 
+user { "deploy":
+	ensure => present,
+	groups => ["<%= app_user %>-homerw","<%= app_group %>"],
+	membership => minimum,
+}
+
 <% if app_stage != "dev" %>
 user { "<%= app_user %>":
 	ensure => present,

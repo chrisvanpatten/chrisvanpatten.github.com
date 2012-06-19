@@ -2,11 +2,11 @@
 require 'rgbapng'
 
 # Path to theme from project root
-project_path      = "./content/themes/vanpattenpress/"
+project_path      = "./public/"
 
 # Where's stuff being stored?
 css_dir           = "css"
-sass_dir          = "sass"
+sass_dir          = "_sass"
 images_dir        = "img"
 javascripts_dir   = "js"
 fonts_dir         = "fonts"
