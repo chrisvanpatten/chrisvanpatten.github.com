@@ -1,6 +1,3 @@
-# Require some gems
-require 'rgbapng'
-
 # Path to theme from project root
 project_path      = "./public/"
 

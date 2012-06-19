@@ -71,7 +71,7 @@ end
 namespace :jekyll do
   desc "Put Jekyll in its place"
   task :hyde, :roles => :app do
-    system("cd public && compass compile -e production --force && jekyll && cd ..")
+    system("compass compile -e production --force && cd public && jekyll && cd ..")
     upload("./public/_site", "#{current_release}/public", :via => :scp, :recursive => :true)
   end
 end

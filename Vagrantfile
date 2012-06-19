@@ -14,7 +14,7 @@ Vagrant::Config.run do |config|
   require "yaml"
   require "erb"
 
-  project  = YAML.load_file("./config/project.yml")
+  project = YAML.load_file("./config/project.yml")
 
   app_name      = project['application']['name']
   app_user      = "vagrant"
