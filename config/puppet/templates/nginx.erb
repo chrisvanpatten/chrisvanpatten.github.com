@@ -23,6 +23,8 @@ server {
 	server_name <%= app_domain %>;
 	<% end %>
 
+	sendfile off; # avoid sendfile issues with sending stale files
+
 	location / {
 		# if you're just using wordpress and don't want extra rewrites
 		# then replace the word @rewrites with /index.php
@@ -42,9 +44,15 @@ server {
 	# the pattern to be captured into $1 which should help improve performance
 	location ~* \.(?:ico|css|js|gif|jpe?g|png)$ {
 		# Some basic cache-control for static files to be sent to the browser
+		<% if app_stage == "production" %>
 		expires 8h;
 		add_header Pragma public;
 		add_header Cache-Control "public, must-revalidate, proxy-revalidate";
+		<% else %>
+		expires 0m;
+		add_header Pragma no-cache;
+		add_header Cache-Control "no-cache, no-store, must-revalidate, proxy-revalidate, max-age=0";
+		<% end %>
 	}
 
 	#error_page 404 /404.html;
