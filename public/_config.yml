@@ -1,0 +1,2 @@
+baseurl: /blog
+permalink: /blog/:year/:month/:title/
