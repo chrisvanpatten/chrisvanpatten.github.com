@@ -9,6 +9,7 @@ database.yml
 .DS_Store
 cache
 css
+_site
 
 # Vagranty things
 .vagrant
