@@ -13,7 +13,7 @@ Do you use the [Delicious](http://www.delicious.com/) extension [for Google Chro
 
 The current plugin is a rebuild of the previous plugin that works with current APIs, but still has a few holdovers from the Yahoo days. Unfortunately, one of those holdovers is the enter-to-autocomplete function, which still retains the space separator instead of the recently instated comma separator. Fortunately, it's a quick fix. **Follow the steps below to make enter-to-autocomplete easy again!**
 
-# Fixing enter-to-autocomplete
+### Fixing enter-to-autocomplete
 
 1.  First you need to **find where the extension is located on your computer's hard drive**. Here are some probable paths:
     +   **Older Windows:** `C:\Documents and Settings\*UserName*\Local Settings\Application Data\Google\Chrome\User Data\Default\Extensions`

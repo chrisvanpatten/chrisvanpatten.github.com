@@ -1,15 +1,14 @@
 ---
+title: ChrisVanPatten.com
 layout: default
 description: A description about my blog homepage
 ---
 
-<div id="posts">
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <span>{{ post.date | date_to_long_string }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul id="posts">
+				{% for post in site.posts %}
+					<li>
+						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+						<span>{{ post.date | date_to_long_string }}</span>
+					</li>
+				{% endfor %}
+				</ul>
