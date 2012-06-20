@@ -26,10 +26,6 @@ body {
 		border-bottom: 2px dotted darken(#F6EFEF, 10%);
 		@include text-shadow(2px 2px 0 darken(#F6EFEF, 2%), 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
 	}
-
-	@media handheld, only screen and (max-width: 479px) {
-		padding: 30px 10px;
-	}
 }
 
 #posts {
@@ -71,12 +67,15 @@ body {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Cabin', sans-serif;
+		line-height: 1.2;
 	}
 }
 
-#post {
+.entry-content {
 	font: 20px/2 'Open Sans', sans-serif;
+}
 
+#post {
 	h3, h4, h5, h6 {
 		margin: 50px 0 0;
 	}
@@ -143,5 +142,19 @@ body {
 		margin-left: 20px;
 		border-left: 2px dotted darken(#F6EFEF, 5%);
 		font-style: italic;
+	}
+}
+
+@media handheld, only screen and (max-width: 479px) {
+	#logo {
+		padding: 30px 10px;
+	}
+
+	#content {
+		padding: 40px 20px 50px;
+	}
+
+	#post p {
+		text-align: left;
 	}
 }
