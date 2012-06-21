@@ -11,7 +11,7 @@ javascripts_dir   = "js"
 fonts_dir         = "fonts"
 
 # Are we in development or production?
-environment       = "development"
+environment       = "production"
 
 # What should environments look like?
 if environment == "production"
