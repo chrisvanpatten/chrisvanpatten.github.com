@@ -38,8 +38,8 @@ end
 # Set up some VPM-specific tasks
 before "deploy:setup", "puppet:show"
 after "deploy:setup", "vpm:fix_setup_ownership"
-before "deploy:restart", "vpm:fix_deploy_ownership"
 before "deploy:create_symlink", "jekyll:hyde"
+before "deploy:restart", "vpm:fix_deploy_ownership"
 
 namespace :puppet do
   desc "Set up puppet"
