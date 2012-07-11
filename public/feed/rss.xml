@@ -1,21 +1,304 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
         <channel>
                 <title>cvp vs. world: posts</title>
-                <link xmlns="http://www.w3.org/2005/Atom" href="http://{{ site.domain }}{{ site.baseurl }}/posts/feed.xml" rel="self" type="application/rss+xml" />
-                <link>http://{{ site.domain }}</link>
-                <description>{{ site.description }}</description>
-                <lastBuildDate>{{ site.time }}</lastBuildDate>
+                <link xmlns="http://www.w3.org/2005/Atom" href="http:///blog/posts/feed.xml" rel="self" type="application/rss+xml" />
+                <link>http://</link>
+                <description></description>
+                <lastBuildDate>Wed Jul 11 09:47:04 -0400 2012</lastBuildDate>
                 <language>en</language>
-                {% for post in site.posts limit:10 %}<item>
-                        <title>{{ post.title | xml_escape }}</title>
-                        <link>http://{{ site.domain }}{{ site.baseurl }}{{ post.url }}</link>
-                        <pubDate>{{ post.date }}</pubDate>
-                        <guid isPermaLink="true">http://{{ site.domain }}{{ site.baseurl }}{{ post.id }}</guid>
-                        <description><![CDATA[{% if post.summary %}{{ post.summary }}{% else %}{{ post.content | strip_html | truncatewords: 100 }}{% endif %}]]></description>
-                        <content:encoded><![CDATA[{{ post.content }}]]></content:encoded>
-                </item>{% endfor %}
+                <item>
+                        <title>Bored</title>
+                        <link>http:///blog/blog/2012/07/bored/</link>
+                        <pubDate>Mon Jul 02 22:00:00 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/07/bored</guid>
+                        <description><![CDATA[]]></description>
+                        <content:encoded><![CDATA[]]></content:encoded>
+                </item><item>
+                        <title>My Development Setup</title>
+                        <link>http:///blog/blog/2012/06/dev-setup/</link>
+                        <pubDate>Thu Jun 21 12:00:00 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/06/dev-setup</guid>
+                        <description><![CDATA[As a web designer/developer, my computer is my most important tool (surprise). But even more important is how my computer is set up; what applications I have, their configuration, and the physical arrangement of the computer itself. The past six months have brought major changes in how I work on my computer, and I thought I&#8217;d write a quick post to share my methods and practices with the world. The physical setup My computer is a 15&#8221; MacBook Pro (mid-2009). When I&#8217;m at home, I typically have it plugged in to a second monitor, a 21.5 inch 1080p model from...]]></description>
+                        <content:encoded><![CDATA[<p>As a web designer/developer, my computer is my most important tool (surprise). But even more important is <em>how</em> my computer is set up; what applications I have, their configuration, and the physical arrangement of the computer itself. The past six months have brought major changes in how I work on my computer, and I thought I&#8217;d write a quick post to share my methods and practices with the world.</p>
+
+<h3 id='the_physical_setup'>The physical setup</h3>
+
+<p>My computer is a <strong>15&#8221; MacBook Pro</strong> (<a href='http://support.apple.com/kb/SP544'>mid-2009</a>). When I&#8217;m at home, I typically have it plugged in to a second monitor, a 21.5 inch 1080p model from Acer (I&#8217;m not sure the exact model number) which I keep on a monitor arm at eye-level. The MacBook Pro itself is also raised at eye level (with a very technical plastic box). After noticing lots of back and neck strain, this seemed like a great way to relieve some of that tension and it&#8217;s proved to be one of the best moves I&#8217;ve made in a long time.</p>
+
+<p>At desk/arm-level I have an <strong><a href='http://www.apple.com/keyboard/'>Apple wireless Bluetooth keyboard</a></strong> and a <strong>Logitech MX Revolution mouse</strong> (<a href='http://www.amazon.com/Logitech-Cordless-Revolution-Bluetooth-Keyboard/dp/B0011FQUQG'>the rare Bluetooth edition</a>, worth every penny). I take the mouse with me everywhere. For the type of precision graphic design I do, my MacBook Pro&#8217;s trackpad just doesn&#8217;t cut it. Even when I&#8217;m just casually browsing the web, I feel far more comfortable with a scroll-wheel than with two finger scroll gestures.</p>
+
+<h3 id='design_software'>Design Software</h3>
+
+<p>When it comes to actually designing sites, my go-to app is <strong><a href='http://www.adobe.com/products/photoshop.html'>Adobe Photoshop</a></strong>. I actually have the whole Creative Suite (<a href='http://www.adobe.com/products/creativesuite/designstandard.html'>Design Standard</a>) and in the past six months I&#8217;ve jumped from CS4 to CS5.5 to CS6. CS6 is an absolute joy to use compared to the previous two incarnations, although it&#8217;s not perfect yet (the application chrome has a weird border, and I&#8217;ve had a number of crashes with the blur tool, oddly enough). Still, if you have the opportunity, jump to CS6.</p>
+
+<p>Although I use Save For Web to save all my web-bound images, I almost always recompress them through the essential <strong><a href='http://imageoptim.com/'>ImageOptim</a></strong>, a great tool that optimizes images of all types. It&#8217;s shaved as much as 70% off images for me in the past; an incredible savings. I also use its sister app, <strong><a href='http://pngmini.com/'>ImageAlpha</a></strong>, which allows me to generate 8-bit alpha transparent PNGs (bet you didn&#8217;t know that was possible, eh?). Having the capabilities of alpha transparency in the 8-bit color space is an incredible boon for speed without sacrificing design. Totally worth the extra time and finessing.</p>
+
+<p>For managing fonts, I go with Extensis&#8217; <strong><a href='http://www.extensis.com/suitcase-fusion-4/'>Suitcase Fusion 4</a></strong> (another recent upgrade, from version 3). The application is ugly and occasionally buggy, but the auto-activation is the best of any font manager on the market. It also bundles <a href='http://www.google.com/webfonts'>Google Web Fonts</a>, so you can easily incorporate them into mockups and graphics, without needing to download them manually. Unfortunately, Photoshop CS6 has a <a href='http://blog.extensis.com/font-management/adobe-cs6-plug-ins-for-suitcase-fusion-4-now-available.php'>known bug that breaks Extensis&#8217; auto-activation plugin</a>, so the two apps are temporarily incompatible.</p>
+
+<p>The tiny and simple <strong><a href='http://www.charcoaldesign.co.uk/pipette'>Pipette</a></strong> helps me grab colors from my screen. There are many like it, but Pipette is straight forward, no-nonsense, and damn fast.</p>
+
+<h3 id='development_software'>Development Software</h3>
+
+<p>One of the first applications I start up every day is <a href='http://en.wikipedia.org/wiki/Terminal_(OS_X)'>Terminal</a>. I use <strong><a href='http://en.wikipedia.org/wiki/Z_shell'>zsh</a></strong> instead of Bash, with a few <strong><a href='https://github.com/robbyrussell/oh-my-zsh'>oh-my-zsh</a></strong> plugins (you can see which ones at <a href='https://github.com/chrisvanpatten/dotfiles'>my dotfiles repo</a> on Github). I use Terminal for navigating through folders, checking DNS on remote domains, getting dictionary information, working with Git, deploying websites, and much, much more.</p>
+
+<p>One thing I <em>don&#8217;t</em> use it for is text editing. While I&#8217;ve been pretty frequently hounded to look into Vim, my basic text-editing needs on the command line are well-covered by nano. When I need to do serious text-editing, I look no further than <strong><a href='http://www.sublimetext.com/2'>Sublime Text 2</a></strong>. It&#8217;s the best text editor I&#8217;ve ever used. The plugin architecture, theme capabilities, and command-line integration make it a no brainer. I haven&#8217;t registered yet, but intend to very soon. It will be worth every penny.</p>
+
+<p>When I need to do a bit more intense folder navigation (mainly when I need to move files around or see directory structures in a way <code>ls</code> can&#8217;t show them) I turn to Finder, and specifically the <strong><a href='http://totalfinder.binaryage.com/'>Total Finder</a></strong> application. Total Finder brings tabs, dual-pane browsing, and many more useful features to Finder. It&#8217;s a must-have.</p>
+
+<p>Although I&#8217;ve started moving away from SFTP as a deployment mechanism, I keep <strong><a href='http://cyberduck.ch/'>Cyberduck</a></strong> around for occasions where an SFTP client becomes necessary. It&#8217;s also useful for browsing remote S3 buckets, so it is very useful in that regard.</p>
+
+<h4 id='in_the_browser'>In the browser</h4>
+
+<p>Finally, I have a few tools I use for in-browser work. First and foremost are Chrome&#8217;s excellent <strong><a href='https://developers.google.com/chrome-developer-tools/'>Developer Tools</a></strong>. They can&#8217;t be beat (although admittedly Firefox is gaining ground with <a href='http://blog.mozilla.org/blog/2012/01/31/firefox-adds-powerful-new-developer-tools/'>their own native set</a>). For debugging, speed profiling, and so much more, you don&#8217;t need to look anywhere else.</p>
+
+<p>I&#8217;ve just become addicted to <strong><a href='http://livereload.com/'>LiveReload</a></strong>. I would rather have this type of feature handled in the command line, but <a href='https://github.com/guard/guard-livereload'>guard-livereload</a> seems to be designed primarily for Ruby-based apps. I&#8217;m working mostly in PHP, and although we have a Ruby-based deployment architecture it just doesn&#8217;t fit into our setup. The app is flawless though, and although I wish it could be invoked from the command line it does exactly what it says on the tin with no complaints.</p>
+
+<p>For mobile browser work, <strong><a href='http://labs.adobe.com/technologies/shadow/'>Adobe Shadow</a></strong> is excellent. It&#8217;s basically a nice wrapper around <a href='http://people.apache.org/~pmuellr/weinre/'>weinre</a>, but the wrapper makes it easy and fast. The bundled weinre Web Inspector isn&#8217;t always perfect: CSS values don&#8217;t always reflect reality, and changing values almost always breaks thing. Still, it&#8217;s excellent for a side-by-side look at the state of your site.</p>
+
+<h4 id='theres_more'>There&#8217;s more</h4>
+
+<p>There&#8217;s a whole lot more that I didn&#8217;t cover, my browser of choice, music app, markdown editor, the software stack I use to power the websites I build, password manager, etc. I could go on all day if I tried! Still, this is a good introduction to some great tools that are making my day-to-day easy and (often times) fun.</p>]]></content:encoded>
+                </item><item>
+                        <title>A New Direction for ChrisVanPatten.com</title>
+                        <link>http:///blog/blog/2012/06/new-direction/</link>
+                        <pubDate>Tue Jun 19 20:57:00 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/06/new-direction</guid>
+                        <description><![CDATA[It&#8217;s been only a few months since I last tackled redesigning ChrisVanPatten.com. It was a spur of the moment thing (it usually is) in the middle of BarCamp Rochester. While the previous design was okay (it was brimming with my trademark simplicity) it wasn&#8217;t quite what I wanted. And frankly, while I hoped a redesign would encourage me to blog a bit more, it didn&#8217;t. So I&#8217;ve decided to try again, and this time not only have I completely redesigned, I&#8217;ve actually switched blogging engines. I&#8217;m now using the flexible and powerful static-site generator Jekyll. &#8220;Now hold on,&#8221; you, the...]]></description>
+                        <content:encoded><![CDATA[<p>It&#8217;s been only a few months since I last tackled redesigning ChrisVanPatten.com. It was a spur of the moment thing (it usually is) in the middle of <a href='http://barcamproc.org/'>BarCamp Rochester</a>. While the previous design was <em>okay</em> (it was brimming with my trademark simplicity) it wasn&#8217;t quite what I wanted. And frankly, while I hoped a redesign would encourage me to blog a bit more, it didn&#8217;t.</p>
+
+<p>So I&#8217;ve decided to try again, and this time not only have I completely redesigned, I&#8217;ve actually switched blogging engines. I&#8217;m now using the flexible and powerful static-site generator <strong><a href='https://github.com/mojombo/jekyll'>Jekyll</a></strong>.</p>
+
+<p>&#8220;Now hold on,&#8221; you, the client who frequently comes to me for WordPress-related services, might say. &#8220;Why are you using this <em>Jekyll</em> thing? I thought you were a WordPress guy?&#8221;</p>
+
+<p>In a nutshell, I am a WordPress guy. I love and evangelize the platform, and I&#8217;m excited to be helping to organize the upcoming WordCamp in Buffalo this October. WordPress is the foundation of <a href='http://www.vanpattenmedia.com'>Van Patten Media</a>, and I don&#8217;t see that changing any time soon.</p>
+
+<p>Still, that doesn&#8217;t change the fact that, at the end of the day, I did make a switch. My reasons are thus:</p>
+
+<ol>
+<li>I love <strong>Markdown</strong>. Formatting text in Markdown is far more pleasant than HTML (and I can still use HTML if I so choose), and means I can write posts in just about any environment, whether I have Microsoft Word or a simple command line.</li>
+
+<li>It&#8217;s geeky! Jekyll is straightforward to set up, but it&#8217;s for geeks first. It&#8217;s fun to play around with, and it tickles my geek bone.</li>
+
+<li>We&#8217;re working on <a href='https://github.com/vanpattenmedia/vanpattenmedia.com'>building a new deployment architecture</a> at VPM, and the majority of it is based on Ruby. Working with Jekyll, one of the prototypical Ruby applications, is a great way for me to familiarize myself with Ruby and &#8220;the Ruby way.&#8221;</li>
+</ol>
+
+<p>WordPress continues to be my platform of choice for clients and my business, and I don&#8217;t forsee that changing any time soon.</p>
+
+<p>So I hope you enjoy this new (fully mobile-friendly) design. It was fun to put together, and I&#8217;m excited to get back into blogging.</p>
+
+<p><em>P.S. I haven&#8217;t installed any comments modules (e.g. Disqus) for the redesigned site. I&#8217;ve decided I&#8217;d much rather keep conversation in email or Twitter. I&#8217;ll be looking into ways to integrate those discussions here soon!</em></p>]]></content:encoded>
+                </item><item>
+                        <title>Theme wrappers sans spanning</title>
+                        <link>http:///blog/blog/2012/04/theme-wrappers-sans-spanning/</link>
+                        <pubDate>Fri Apr 27 09:52:20 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/theme-wrappers-sans-spanning</guid>
+                        <description><![CDATA[Last night at the Buffalo WordPress Meetup I did a little talk about theme wrappers. I briefly alluded to the dangers of tag spanning but didn&#8217;t follow up on it, and when I live-converted a theme to use theme wrappers I didn&#8217;t convert it to the format I typically use that repurposes header.php and footer.php to help prevent tag spanning. I thought I&#8217;d go over it here to help clear that up! In the final example I showed, where I converted a site to the theme wrapper method live, tag spanning was still in place because I used the get_header...]]></description>
+                        <content:encoded><![CDATA[<p>Last night at the Buffalo WordPress Meetup I did a little talk about theme wrappers. I briefly alluded to the dangers of tag spanning but didn&#8217;t follow up on it, and when I live-converted a theme to use theme wrappers I didn&#8217;t convert it to the format I typically use that repurposes header.php and footer.php to help prevent tag spanning. I thought I&#8217;d go over it here to help clear that up!</p>
+
+<p>In the final example I showed, where I converted a site to the theme wrapper method live, tag spanning was still in place because I used the get_header and get_footer functions for their typical purpose (and the way I had originally used them in the theme). This is <em>totally okay</em> if that&#8217;s how you like to work, but I actually ended up modifying that base.php file this morning to make it a little more sane.</p>
+
+<p>Here&#8217;s how you can do that too.</p>
+
+<p>First, create a new file: head.php. Head.php is a partial that contains the entire content of the <code>&lt;head&gt;</code> HTML tag, and the opening and closing tags themselves. Now where that markup would normally be included in header.php, I just add <code>&lt;?php get_template_part(&#39;head&#39;); ?&gt;</code> to pull in the head.php partial.</p>
+
+<p>There&#8217;s no real reason to do this other than keeping a lot of code out of my base.php file and keeping things a little cleaner. I think it just overall makes it easier to parse through a file and get to relevant content faster, but that&#8217;s just me. And because the <code>&lt;head&gt;</code> tag gets opened and closed right within the head.php partial, you don&#8217;t have to worry about spanning. I also like it because I can easily copy head.php between projects that often start with the same basic needs.</p>
+
+<p>Now in your header.php file, copy everything over to your base.php. Keep you header.php file, you&#8217;ll probably want it, but ignore it for now. Replace your call to get_header with what you just copied. Do the same with get_footer and footer.php.</p>
+
+<p>So now your base.php file is a whole lot bigger. But we can trim it back down by looking in your header and footer (in your markup, not those files yet) for the actual header and footer markup that closes itself. <em>That&#8217;s</em> what you want to copy back into your header and footer files, and replace that markup in your base.php file with get_header and get_footer.</p>
+
+<p>Here&#8217;s a gist that shows the finished base.php.</p>
+<script src='https://gist.github.com/2509424.js?file=base.php'> </script>
+<p>I hope this makes some sense. Let me know if you have any questions and what you think of this method!</p>]]></content:encoded>
+                </item><item>
+                        <title>Even better DRY for WordPress</title>
+                        <link>http:///blog/blog/2012/04/better-dry-wordpress/</link>
+                        <pubDate>Wed Apr 25 11:07:03 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/better-dry-wordpress</guid>
+                        <description><![CDATA[So I posted a week or so ago about DRY themes for WordPress. Turns out, this has been done already (I thought it might have been), and in an even more awesome way that avoids my conditional-filled logic statements. Check out scribu&#8217;s Theme Wrappers, the most brilliant handling of this issue yet. With a little bit of extra code in your functions.php file (or in a plugin–after a little more testing I&#8217;ll probably incorporate this into the rach5-helper) you have a perfect setup that lets you define a base php file (wrapper.php in his example, but I prefer base.php) and...]]></description>
+                        <content:encoded><![CDATA[<p>So I posted a week or so ago about <a href='http://www.chrisvanpatten.com/blog/2012/04/dry-wordpress-themes/'>DRY themes for WordPress</a>. Turns out, this has been done already (I thought it might have been), and in an even more awesome way that avoids my conditional-filled logic statements.</p>
+
+<p>Check out <a href='http://scribu.net/wordpress/theme-wrappers.html'>scribu&#8217;s Theme Wrappers</a>, the most brilliant handling of this issue yet.</p>
+
+<p>With a little bit of extra code in your functions.php file (or in a plugin–after a little more testing I&#8217;ll probably incorporate this into the <a href='https://www.github.com/vanpattenmedia/rach5-helper'>rach5-helper</a>) you have a perfect setup that lets you define a base php file (wrapper.php in his example, but I prefer base.php) and use WordPress standard template names to fill in the gaps, saving you time and energy and keeping you from needing to maintain a 20 line conditional check.</p>
+
+<p>This is an awesome system and absolutely worth checking out if easily maintainable themes is something that matters to you!</p>]]></content:encoded>
+                </item><item>
+                        <title>DRY WordPress Themes</title>
+                        <link>http:///blog/blog/2012/04/dry-wordpress-themes/</link>
+                        <pubDate>Fri Apr 20 13:54:10 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/dry-wordpress-themes</guid>
+                        <description><![CDATA[I&#8217;ve been working out a new process for developing WordPress themes and I wanted to share it here before I take it over to the Van Patten Media blog. I&#8217;d love to get feedback and tweak it as much as possible! I&#8217;ve been developing WordPress themes for a lot of years–almost as long as I&#8217;ve been doing professional web development. One of the biggest problems I&#8217;ve run into (especially lately) is writing themes that are easily maintainable. Sass and Compass have helped in the style sheet department (see my introduction to them) but the WordPress themes themselves still are full...]]></description>
+                        <content:encoded><![CDATA[<p>I&#8217;ve been working out a new process for developing WordPress themes and I wanted to share it here before I take it over to the Van Patten Media blog. I&#8217;d love to get feedback and tweak it as much as possible!</p>
+
+<p>I&#8217;ve been developing WordPress themes for a lot of years–almost as long as I&#8217;ve been doing professional web development. One of the biggest problems I&#8217;ve run into (especially lately) is writing themes that are easily maintainable.</p>
+
+<p>Sass and Compass have helped in the style sheet department (<a href='http://www.chrisvanpatten.com/blog/2012/04/sexy-style-sheets-sass-compass/'>see my introduction to them</a>) but the WordPress themes themselves still are full of heavily repeated content. What do I mean?</p>
+
+<p>Well, a WordPress theme generally has a few base items:</p>
+
+<ul>
+<li>index.php</li>
+
+<li>page.php</li>
+
+<li>single.php</li>
+
+<li>header.php</li>
+
+<li>footer.php</li>
+
+<li>page-{your-template}.php</li>
+
+<li>etc.</li>
+</ul>
+
+<p>&#8220;So where&#8217;s the problem?&#8221; you might ask. &#8220;Your header and footer are included in every file, and that solves every problem.&#8221; Yes, but I have one requirement that stumps things: I want no tags spanning across files.</p>
+
+<p>What do I mean? Simple: if I open a <code>&lt;div&gt;</code> in one file, I don&#8217;t want to close it in another. And with header and footer.php files, that&#8217;s exactly the situation you end up in. You probably open up your <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and a number of wrapper <code>&lt;div&gt;</code>s.</p>
+
+<p>That gets unmaintainable quickly when you&#8217;re bouncing between multiple projects a day and don&#8217;t remember what the third closing div tag lined up with in your footer.php file. So I&#8217;ve implemented a new system, visible in the most recent <a href='https://github.com/vanpattenmedia/rach5'>Rach5</a> commits.</p>
+
+<p>This system forgoes the traditional page.php and single.php templates, and instead makes extensive use of conditionals called from index.php. Now if you are familiar with the <a href='http://codex.wordpress.org/Template_Hierarchy'>WordPress template hierarchy</a>, you know that conditionals in an index file are doing double the work, as WordPress has already tried to find an appropriate file. But by putting the majority of your theme structure in index.php (think of it as your base file) you save yourself a massive amount of work down the line.</p>
+<script src='https://gist.github.com/2430622.js'> </script>
+<p>YYou can see in the gist how my files are laid out: header.php now includes the <em>visible header</em> within the <code>&lt;body&gt;</code> tag. And I&#8217;m now using a new template part, head.php, to serve the <code>&lt;head&gt;</code> tag. You can see an example of the <a href='https://github.com/vanpattenmedia/rach5/blob/master/head.php'>head.php from Rach5 here</a> (Note: with this method, you could easily include the <code>&lt;head&gt;</code> tag directly in your base file, but I choose not to for maintainability reasons).</p>
+
+<p>Then every time I want to include new content in the &#8220;content area&#8221; of the site, I have conditionals that determine which file to include. I have two default loop files, loop-page.php and loop-post.php which handle basic loops, and a pg-front.php template part. Calling these conditionals from here causes some extra logic to be executed (duplicating logic that WordPress executed previously, in a way), but caching will make that negligible, and this means I can minimize duplicated template code.</p>
+
+<p>I&#8217;ve only loosely sketched out the concept, but you can see it and try it for yourself by downloading the latest Rach5. I&#8217;d love to hear what others think!</p>]]></content:encoded>
+                </item><item>
+                        <title>Sexy Style Sheets with Sass (and Compass)</title>
+                        <link>http:///blog/blog/2012/04/sexy-style-sheets-sass-compass/</link>
+                        <pubDate>Sat Apr 14 16:23:55 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/sexy-style-sheets-sass-compass</guid>
+                        <description><![CDATA[Today at BarCamp Rochester I gave a talk outlining some of the awesome features of Sass and Compass (the style sheet preprocessor and the preeminent framework built for it, respectively) with lots of examples and lots of code. The slides are online here (built with DeckJS). They discuss some basic Sass features and some additions Compass brings to the table as well. Considering the fairly dense nature of the material and the speed I had to rush through them, I think the talk was fairly well received. If I could have another go (and I may soon) I would consider...]]></description>
+                        <content:encoded><![CDATA[<p>Today at <a href='http://barcamproc.org/'>BarCamp Rochester</a> I gave a talk outlining some of the awesome features of <a href='http://sass-lang.com/'>Sass</a> and <a href='http://compass-style.org/'>Compass</a> (the style sheet preprocessor and the preeminent framework built for it, respectively) with lots of examples and lots of code.</p>
+
+<p>The slides are <a href='http://www.chrisvanpatten.com/talks/ssssc/'>online here</a> (built with <a href='http://imakewebthings.com/deck.js/'>DeckJS</a>). They discuss some basic Sass features and some additions Compass brings to the table as well.</p>
+
+<p>Considering the fairly dense nature of the material and the speed I had to rush through them, I think the talk was fairly well received. If I could have another go (and I may soon) I would consider reformatting the presentation so it&#8217;s less &#8220;here&#8217;s a feature, here&#8217;s another feature, and yet another feature&#8221; but instead connects the features so you get a better sense of how they&#8217;re used in a workflow. Demonstrating the process of building of a page in realtime with Sass and Compass would be more fun and accomplish this, but it would have to be carefully scripted.</p>
+
+<p>I left out three major things in the discussion (but touched briefly on one of them):</p>
+
+<ol>
+<li><a href='http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#partials'>Partials</a></li>
+
+<li><a href='http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#syntax'>Sass vs. SCSS syntax</a></li>
+
+<li>Getting started (installation <a href='http://sass-lang.com/download.html'>for Sass</a> and <a href='http://compass-style.org/install/'>for Compass</a>)</li>
+</ol>
+
+<p>I&#8217;ve linked to some resources above that will guide you to the right places for beginning your own exploration of those topics.</p>
+
+<p>I had a great time at BarCamp Rochester, reconnecting with folks from the Rochester tech community and hanging out with friends from Buffalo. And the swag is awesome: I walked away with three new t-shirts (thanks BarCamp Rochester, Puppet Labs, and Stack Overflow!), many new stickers (thanks jQuery UI, Puppet Labs, and Stack Overflow!) and a killer beer stein (thanks Stack Overflow!).</p>
+
+<p>I&#8217;m already looking forward to the next BarCamp, and hopefully we can get one running in Buffalo regularly again soon!</p>]]></content:encoded>
+                </item><item>
+                        <title>Thoughts on licenses</title>
+                        <link>http:///blog/blog/2012/04/thoughts-licenses/</link>
+                        <pubDate>Sun Apr 08 20:02:37 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/thoughts-licenses</guid>
+                        <description><![CDATA[I was going to write this post here, then I thought I&#8217;d post it at the Van Patten Media blog, then I changed my mind and cancelled the whole post. Finally, I&#8217;ve decided to write a shorter version of my thoughts here. Bear with me. I&#8217;ve been thinking a lot lately about open source software licenses. Aside from using open source all day err&#8217; day, Van Patten Media has also released several open source software components; most of these in connection with WordPress. So why think about licenses? Well, they&#8217;re the framework that defines a piece of open source software....]]></description>
+                        <content:encoded><![CDATA[<p><em>I was going to write this post here, then I thought I&#8217;d post it at the Van Patten Media blog, then I changed my mind and cancelled the whole post. Finally, I&#8217;ve decided to write a shorter version of my thoughts here. Bear with me.</em></p>
+
+<p>I&#8217;ve been thinking a lot lately about open source software licenses. Aside from using open source all day err&#8217; day, Van Patten Media has also released several open source software components; most of these in connection with WordPress.</p>
+
+<p>So why think about licenses? Well, they&#8217;re the framework that defines a piece of open source software. Essentially they are what opens it. And when VPM has been so active in ensuring compliance with the open source ecosystems we&#8217;re apart of (our publicly available plugins and theme utilities are entirely GPL or GPL-compatible, as circumstances dictate) I get annoyed when other services in this same ecosystem (the WordPress ecosystem, usually) violate what I believe is the spirit of the GPL, the license that governs most WordPress activity.</p>
+
+<p>What leads me to feel this way? Three things:</p>
+
+<h3 id='duallicensing_of_themes'>Dual-licensing of themes.</h3>
+
+<p>Admittedly the Software Freedom Law Center has <a href='https://wordpress.org/news/2009/07/themes-are-gpl-too/'>given the thumbs-up to dual-licensing themes</a>, under the logic that the PHP files require WordPress to run, but the CSS/images/javascript can stand alone. They have valid technical reasons for their assessment of why PHP code in a theme is assuredly GPL, but I think their analysis of static content is critically flawed.</p>
+
+<p>Much in the same way that removing WordPress removes the functionality of a theme, removing a theme&#8217;s static content removes the very essence of what makes it unique and usable. Without (at the very least) CSS, a theme can hardly be considered a &#8220;theme&#8221; at all. And the GPL has this important passage:</p>
+
+<blockquote>
+<p>If identifiable sections of that &#91;modified&#93; work are not derived from the Program, and can be reasonably considered independent and separate works in themselves, then this License, and its terms, do not apply to those sections when you distribute them as separate works. <strong>But when you distribute the same sections as part of a whole which is a work based on the Program, the distribution of the whole must be on the terms of this License</strong></p>
+</blockquote>
+
+<p>This is taken from <a href='https://www.gnu.org/licenses/gpl-2.0.html'>section 2</a>, which is the section that initiates virality. And to my mind, that passage sets it up quite clearly that GPL is all or nothing, unless the components are distributed separately. (The emphasis above is mine.)</p>
+
+<h3 id='misleading_users'>Misleading users</h3>
+
+<p>This one is a personal pet peeve. Certain theme repositories that will not be named lead users to believe that their WordPress theme purchases can only be used a limited number of times before they must purchase new licenses.</p>
+
+<p>Remember how <a href='https://wordpress.org/news/2009/07/themes-are-gpl-too/'>WordPress themes are GPL</a>? Even if you don&#8217;t share my opinion that all components of publicly distributed themes should be GPL (and admittedly, many do not) this practice is still misleading. While you may be restricted by a secondary license on reuse of static content, make no mistake: <strong>you can use theme PHP files as many times as you want to.</strong> Any copy that confuses users and leads them to believe otherwise is morally suspect and just plain shady.</p>
+
+<h3 id='paywalls'>Paywalls</h3>
+
+<p>This last issue is another one that bothers me (and I know others): the issue of the paywall. It&#8217;s an incredibly touchy issue, as paywalls (or perceived paywalls) are probably the number one way WordPress developers can create quick revenue streams.</p>
+
+<p>My concern is that paywalls, in congress with the issues I&#8217;ve mentioned above, are antithetical to the openness and virality that the GPL is designed to promote.</p>
+
+<p>Yes, the GPL permits charging for distribution. The GNU website even has a <a href='https://www.gnu.org/philosophy/selling.html'>fascinating article</a> encouraging individuals to charge for their open source software. But it&#8217;s key to understand their perspective: they&#8217;re encouraging you to charge so as to support the community around the program and donate to future developments. In fact, their article assumes you&#8217;re charging for <em>redistribution</em>. In their scenario, the software is already out and available in the public sphere, ready to be used and picked apart by those with the know-how. As a redistributor, you&#8217;re just helping to make it more readily available.</p>
+
+<p>In the WordPress ecosystem, this is rarely the case. Software developers <em>are</em> the distributors, so you have no choice but to pay to get it from the source. While this is permitted by the letter of the license, I think it&#8217;s a violation of the spirit of the license, which is designed to perpetuate the spread of free software, not lock it behind a door.</p>
+
+<p>To me, the paywall is the manifestation of an attitude I get from many WordPress theme and plugin developers: the GPL (and licensing) is just an inconvenience; a requirement from on high to satisfy some arcane legal nonsense. To me, the paywall is the physicalization of the search for loopholes in the license so you can squeeze more money out of your end users while consolidating control and restricting access.</p>
+
+<p>And furthermore, I&#8217;m frustrated by the services that refuse to sell me a theme or plugin without also selling me some sort of support package that I don&#8217;t need. Frankly, I&#8217;m not sure that is at all within the letter of the GPL. Forcing me to buy bundles with support and plugin access is price gouging, and taking advantage of end users. Sell support separately.</p>
+
+<h3 id='ultimately'>Ultimately&#8230;</h3>
+
+<p>I would love nothing more than to see plugin and theme developers start developing their wares out in the open on Github or their own code repositories. I would love to see &#8220;purchase upgrades&#8221; or &#8220;buy this theme/plugin&#8221; become a thing of the past.</p>
+
+<p>The emphasis should be on personalization. Upselling is the name of the game, right? Instead of asking users to spend $200 on a theme, why not spend $200 and take an hour or so with every user to actually help them get their website live. Offer more than just &#8220;support when it breaks&#8221; but &#8220;support before you need it.&#8221; Be the concierge for your product.</p>
+
+<p>Admittedly my opinions on licensing are a bit extreme in the WordPress ecosystem. Even some members of the core team have expressed opinions that are contrary to my own. <em>And that&#8217;s okay.</em></p>
+
+<p>But when you set out to make a buck, and you&#8217;re doing it on the backs of hundreds if not thousands of folks who collectively built a piece of software that your creation depends on, give it some thought&#8230; are you making your thing in the most ethical way possible? Are you treating your customer with respect and without misleading them? Are you contributing to the software ecosystem that you&#8217;re apart of?</p>
+
+<p>If you can&#8217;t answer yes to those questions, you may need to stop and seriously re-examine your approach. I know we have at Van Patten Media, and I sleep better at night for it.</p>]]></content:encoded>
+                </item><item>
+                        <title>Local WordPress Development Dilemma</title>
+                        <link>http:///blog/blog/2012/04/local-wordpress-development-dilemma/</link>
+                        <pubDate>Thu Apr 05 23:24:06 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/04/local-wordpress-development-dilemma</guid>
+                        <description><![CDATA[My current web development workflow is a little sloppy, I admit. Traditionally, you have four stages: dev, QA, staging, and production. My workflow completely eliminates one of those stages (QA) and combines two (dev and staging are just one stage for me). And–the pièce de résistance–I don&#8217;t keep my combined dev/staging setup on my local machine; it&#8217;s all on my remote server. Sure, it works&#8230; but it&#8217;s not ideal (as Paddy has been very quick and all too eager to point out). And as I&#8217;m on the hunt for a new text editor (my beloved Espresso 1.x is not Lion-friendly)...]]></description>
+                        <content:encoded><![CDATA[<p>My current web development workflow is a little sloppy, I admit. Traditionally, you have four stages: dev, QA, staging, and production. My workflow completely eliminates one of those stages (QA) and combines two (dev and staging are just one stage for me). And–the pièce de résistance–I don&#8217;t keep my combined dev/staging setup on my local machine; it&#8217;s all on my remote server.</p>
+
+<p>Sure, it works&#8230; but it&#8217;s not ideal (as <a href='http://paddy.io/'>Paddy</a> has been very quick and all too eager to point out). And as I&#8217;m on the hunt for a new text editor (my beloved Espresso 1.x is not Lion-friendly) and get to know Git better, I&#8217;ve decided to overhaul my development workflow (and eventually institute the changes across <a href='http://www.vanpattenmedia.com/'>Van Patten Media</a>&#8230; I&#8217;m sure <a href='http://www.peter.upfold.org.uk/'>Peter</a> will be happy to see me attempting to standardize this process a bit!). <strong>The goal? Local dev, remote staging and production, with deployment between the three handled by Git and Git hooks</strong> (as much as possible) <strong>with Vagrant handling the local server environment</strong> (as opposed to MAMP or something like that).</p>
+
+<p>Now the conventional wisdom is &#8220;just install WordPress and go wild!&#8221; But remember–Van Patten Media is primarily dealing in WordPress, so there are a few hiccups along the way (I love WordPress, but it&#8217;s making this a pain in the neck!). Among them:</p>
+
+<ol>
+<li>WordPress sets the site URL in the database&#8230; so every time I want to push database content between <code>dev.*</code>, <code>staging.*</code>, and the production site, I need to change that item in the database.</li>
+
+<li>Whenever you insert an image in the editor, it uses the absolute URL (e.g. <code>site.com/path/to/image.ext</code>). Remember that last item? Same situation, but even more fun: I&#8217;ll need to scan <em>every post</em> for the site&#8217;s hostname and switch it out based on whether I&#8217;m at <code>dev.*</code>, <code>staging.*</code>, or on production.</li>
+
+<li>I like to arrange my WordPress projects in a specific way, because I often have custom <code>humans.txt</code>/<code>robots.txt</code> files and <code>maintenance.php</code> files that live outside the theme root. You can see an example of this at the <a href='https://github.com/vanpattenmedia/vanpattenmedia.com'>Github repo for the Van Patten Media website</a>.</li>
+
+<li>I absolutely do not want to keep WordPress core (or plugins) in version control. WordPress core needs to be managed separate for each website, and plugins as well (updates to custom developed plugins are handled by a local update API I have in place).</li>
+</ol>
+
+<p>If you&#8217;re doing a little critical thinking, you can see where things start to fall apart&#8230; it&#8217;s all in steps 3 and 4. It should be easy to handle database syncing with tools like <a href='http://www.liquibase.org/'>Liquibase</a> or database diff tools (and that&#8217;s really only for merging staging into production, I think). The problem is what files I like to keep around, and what files I don&#8217;t like to keep around. The natural solution would be just to set up a WordPress install and symlink the theme folder, but remember how I keep other things around outside the theme folder? Enter frustration, stage right.</p>
+
+<p>So I appeal to you, internet community. What&#8217;s the best way to handle this sync? The ability to have a local Vagrant-managed replica of my server, send the <code>vagrant up</code> command from a project directory, and get a fully working dev environment <em>without ever seeing a WordPress core file</em> is my ideal situation.</p>
+
+<p>And then of course, that introduces another question–how do I handle this sync up to the server (and between staging and production)? It&#8217;d be one thing if I just had the remote theme folder set as the Git remote, but, again, that&#8217;s just not how I&#8217;m handling things. Ideas?</p>
+
+<p>Thanks!</p>]]></content:encoded>
+                </item><item>
+                        <title>Quick Suitcase Fusion 3 tip</title>
+                        <link>http:///blog/blog/2012/03/quick-suitcase-fusion-3-tip/</link>
+                        <pubDate>Sat Mar 17 17:58:27 -0400 2012</pubDate>
+                        <guid isPermaLink="true">http:///blog/blog/2012/03/quick-suitcase-fusion-3-tip</guid>
+                        <description><![CDATA[I was working on a mockup today and got this message while in the process of activating a font in Suitcase Fusion 3, my font manager of choice (well, by necessity, but that&#8217;s another story): Suitcase Fusion Client encountered an unexpected error. 83914764 Google lead me to a forum thread that discussed the issue, but I wasn&#8217;t too interested in accepting the thread&#8217;s &#8220;reinstall the program&#8221; advice so quickly. After a bit of playing, I found a solution that was a lot more painless. No guarantees it will work for you, but it&#8217;s worth a shot! Simply open your Suitcase...]]></description>
+                        <content:encoded><![CDATA[<p><a href='http://www.chrisvanpatten.com/wp-content/uploads/2012/03/sferror.png'><img alt='' src='http://www.chrisvanpatten.com/wp-content/uploads/2012/03/sferror.png' /></a>I was working on a mockup today and got this message while in the process of activating a font in Suitcase Fusion 3, my font manager of choice (well, by necessity, but that&#8217;s another story):</p>
+
+<blockquote>
+<p>Suitcase Fusion Client encountered an unexpected error. 83914764</p>
+</blockquote>
+
+<p>Google lead me to a <a href='http://forums.extensis.com/viewtopic.php?f=30&amp;t=3874'>forum thread that discussed the issue</a>, but I wasn&#8217;t too interested in accepting the thread&#8217;s &#8220;reinstall the program&#8221; advice so quickly.</p>
+
+<p>After a bit of playing, I found a solution that was a lot more painless. No guarantees it will work for you, but it&#8217;s worth a shot!</p>
+
+<p>Simply open your Suitcase Fusion 3 preferences (<strong>⌘</strong>+<strong>comma</strong>), navigate to the <strong>Type Core</strong> tab, and click the <strong>Stop FMCore&#8230;</strong> button. That will kill FMCore (the process that handles type activation when Suitcase Fusion is closed) and Suitcase Fusion itself. Then just open Suitcase Fusion again to restart FMCore.</p>
+
+<p>If your setup is anything like mine, you&#8217;ll be back in business, error-free!</p>]]></content:encoded>
+                </item>
         </channel>
 </rss>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Even better DRY for WordPress</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700,300">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Emblema+One">
+	<link rel="stylesheet" href="/css/global.css?120711094704">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-575101-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+	<body>
+		<div class="container">
+			<header id="header"><h1>
+	<a href="/" id="logo">cvp vs. world</a>
+</h1></header>
+			<div id="content">
+				<article id="post">
+					<h2 id="post-title">Even better DRY for WordPress</h2>
+
+					<div class="entry-content"><p>So I posted a week or so ago about <a href='http://www.chrisvanpatten.com/blog/2012/04/dry-wordpress-themes/'>DRY themes for WordPress</a>. Turns out, this has been done already (I thought it might have been), and in an even more awesome way that avoids my conditional-filled logic statements.</p>
+
+<p>Check out <a href='http://scribu.net/wordpress/theme-wrappers.html'>scribu&#8217;s Theme Wrappers</a>, the most brilliant handling of this issue yet.</p>
+
+<p>With a little bit of extra code in your functions.php file (or in a plugin–after a little more testing I&#8217;ll probably incorporate this into the <a href='https://www.github.com/vanpattenmedia/rach5-helper'>rach5-helper</a>) you have a perfect setup that lets you define a base php file (wrapper.php in his example, but I prefer base.php) and use WordPress standard template names to fill in the gaps, saving you time and energy and keeping you from needing to maintain a 20 line conditional check.</p>
+
+<p>This is an awesome system and absolutely worth checking out if easily maintainable themes is something that matters to you!</p></div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>

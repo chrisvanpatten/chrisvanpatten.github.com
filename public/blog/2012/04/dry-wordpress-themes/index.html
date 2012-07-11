@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>DRY WordPress Themes</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700,300">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Emblema+One">
+	<link rel="stylesheet" href="/css/global.css?120711094704">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-575101-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+	<body>
+		<div class="container">
+			<header id="header"><h1>
+	<a href="/" id="logo">cvp vs. world</a>
+</h1></header>
+			<div id="content">
+				<article id="post">
+					<h2 id="post-title">DRY WordPress Themes</h2>
+
+					<div class="entry-content"><p>I&#8217;ve been working out a new process for developing WordPress themes and I wanted to share it here before I take it over to the Van Patten Media blog. I&#8217;d love to get feedback and tweak it as much as possible!</p>
+
+<p>I&#8217;ve been developing WordPress themes for a lot of years–almost as long as I&#8217;ve been doing professional web development. One of the biggest problems I&#8217;ve run into (especially lately) is writing themes that are easily maintainable.</p>
+
+<p>Sass and Compass have helped in the style sheet department (<a href='http://www.chrisvanpatten.com/blog/2012/04/sexy-style-sheets-sass-compass/'>see my introduction to them</a>) but the WordPress themes themselves still are full of heavily repeated content. What do I mean?</p>
+
+<p>Well, a WordPress theme generally has a few base items:</p>
+
+<ul>
+<li>index.php</li>
+
+<li>page.php</li>
+
+<li>single.php</li>
+
+<li>header.php</li>
+
+<li>footer.php</li>
+
+<li>page-{your-template}.php</li>
+
+<li>etc.</li>
+</ul>
+
+<p>&#8220;So where&#8217;s the problem?&#8221; you might ask. &#8220;Your header and footer are included in every file, and that solves every problem.&#8221; Yes, but I have one requirement that stumps things: I want no tags spanning across files.</p>
+
+<p>What do I mean? Simple: if I open a <code>&lt;div&gt;</code> in one file, I don&#8217;t want to close it in another. And with header and footer.php files, that&#8217;s exactly the situation you end up in. You probably open up your <code>&lt;html&gt;</code>, <code>&lt;body&gt;</code>, and a number of wrapper <code>&lt;div&gt;</code>s.</p>
+
+<p>That gets unmaintainable quickly when you&#8217;re bouncing between multiple projects a day and don&#8217;t remember what the third closing div tag lined up with in your footer.php file. So I&#8217;ve implemented a new system, visible in the most recent <a href='https://github.com/vanpattenmedia/rach5'>Rach5</a> commits.</p>
+
+<p>This system forgoes the traditional page.php and single.php templates, and instead makes extensive use of conditionals called from index.php. Now if you are familiar with the <a href='http://codex.wordpress.org/Template_Hierarchy'>WordPress template hierarchy</a>, you know that conditionals in an index file are doing double the work, as WordPress has already tried to find an appropriate file. But by putting the majority of your theme structure in index.php (think of it as your base file) you save yourself a massive amount of work down the line.</p>
+<script src='https://gist.github.com/2430622.js'> </script>
+<p>YYou can see in the gist how my files are laid out: header.php now includes the <em>visible header</em> within the <code>&lt;body&gt;</code> tag. And I&#8217;m now using a new template part, head.php, to serve the <code>&lt;head&gt;</code> tag. You can see an example of the <a href='https://github.com/vanpattenmedia/rach5/blob/master/head.php'>head.php from Rach5 here</a> (Note: with this method, you could easily include the <code>&lt;head&gt;</code> tag directly in your base file, but I choose not to for maintainability reasons).</p>
+
+<p>Then every time I want to include new content in the &#8220;content area&#8221; of the site, I have conditionals that determine which file to include. I have two default loop files, loop-page.php and loop-post.php which handle basic loops, and a pg-front.php template part. Calling these conditionals from here causes some extra logic to be executed (duplicating logic that WordPress executed previously, in a way), but caching will make that negligible, and this means I can minimize duplicated template code.</p>
+
+<p>I&#8217;ve only loosely sketched out the concept, but you can see it and try it for yourself by downloading the latest Rach5. I&#8217;d love to hear what others think!</p></div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>

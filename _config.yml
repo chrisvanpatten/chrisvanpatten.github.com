@@ -1,0 +1,4 @@
+baseurl: /blog
+permalink: /blog/:year/:month/:title/
+source: app
+destination: public

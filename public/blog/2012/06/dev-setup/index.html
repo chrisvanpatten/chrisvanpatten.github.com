@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>My Development Setup</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700,300">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Emblema+One">
+	<link rel="stylesheet" href="/css/global.css?120711094704">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-575101-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+	<body>
+		<div class="container">
+			<header id="header"><h1>
+	<a href="/" id="logo">cvp vs. world</a>
+</h1></header>
+			<div id="content">
+				<article id="post">
+					<h2 id="post-title">My Development Setup</h2>
+
+					<div class="entry-content"><p>As a web designer/developer, my computer is my most important tool (surprise). But even more important is <em>how</em> my computer is set up; what applications I have, their configuration, and the physical arrangement of the computer itself. The past six months have brought major changes in how I work on my computer, and I thought I&#8217;d write a quick post to share my methods and practices with the world.</p>
+
+<h3 id='the_physical_setup'>The physical setup</h3>
+
+<p>My computer is a <strong>15&#8221; MacBook Pro</strong> (<a href='http://support.apple.com/kb/SP544'>mid-2009</a>). When I&#8217;m at home, I typically have it plugged in to a second monitor, a 21.5 inch 1080p model from Acer (I&#8217;m not sure the exact model number) which I keep on a monitor arm at eye-level. The MacBook Pro itself is also raised at eye level (with a very technical plastic box). After noticing lots of back and neck strain, this seemed like a great way to relieve some of that tension and it&#8217;s proved to be one of the best moves I&#8217;ve made in a long time.</p>
+
+<p>At desk/arm-level I have an <strong><a href='http://www.apple.com/keyboard/'>Apple wireless Bluetooth keyboard</a></strong> and a <strong>Logitech MX Revolution mouse</strong> (<a href='http://www.amazon.com/Logitech-Cordless-Revolution-Bluetooth-Keyboard/dp/B0011FQUQG'>the rare Bluetooth edition</a>, worth every penny). I take the mouse with me everywhere. For the type of precision graphic design I do, my MacBook Pro&#8217;s trackpad just doesn&#8217;t cut it. Even when I&#8217;m just casually browsing the web, I feel far more comfortable with a scroll-wheel than with two finger scroll gestures.</p>
+
+<h3 id='design_software'>Design Software</h3>
+
+<p>When it comes to actually designing sites, my go-to app is <strong><a href='http://www.adobe.com/products/photoshop.html'>Adobe Photoshop</a></strong>. I actually have the whole Creative Suite (<a href='http://www.adobe.com/products/creativesuite/designstandard.html'>Design Standard</a>) and in the past six months I&#8217;ve jumped from CS4 to CS5.5 to CS6. CS6 is an absolute joy to use compared to the previous two incarnations, although it&#8217;s not perfect yet (the application chrome has a weird border, and I&#8217;ve had a number of crashes with the blur tool, oddly enough). Still, if you have the opportunity, jump to CS6.</p>
+
+<p>Although I use Save For Web to save all my web-bound images, I almost always recompress them through the essential <strong><a href='http://imageoptim.com/'>ImageOptim</a></strong>, a great tool that optimizes images of all types. It&#8217;s shaved as much as 70% off images for me in the past; an incredible savings. I also use its sister app, <strong><a href='http://pngmini.com/'>ImageAlpha</a></strong>, which allows me to generate 8-bit alpha transparent PNGs (bet you didn&#8217;t know that was possible, eh?). Having the capabilities of alpha transparency in the 8-bit color space is an incredible boon for speed without sacrificing design. Totally worth the extra time and finessing.</p>
+
+<p>For managing fonts, I go with Extensis&#8217; <strong><a href='http://www.extensis.com/suitcase-fusion-4/'>Suitcase Fusion 4</a></strong> (another recent upgrade, from version 3). The application is ugly and occasionally buggy, but the auto-activation is the best of any font manager on the market. It also bundles <a href='http://www.google.com/webfonts'>Google Web Fonts</a>, so you can easily incorporate them into mockups and graphics, without needing to download them manually. Unfortunately, Photoshop CS6 has a <a href='http://blog.extensis.com/font-management/adobe-cs6-plug-ins-for-suitcase-fusion-4-now-available.php'>known bug that breaks Extensis&#8217; auto-activation plugin</a>, so the two apps are temporarily incompatible.</p>
+
+<p>The tiny and simple <strong><a href='http://www.charcoaldesign.co.uk/pipette'>Pipette</a></strong> helps me grab colors from my screen. There are many like it, but Pipette is straight forward, no-nonsense, and damn fast.</p>
+
+<h3 id='development_software'>Development Software</h3>
+
+<p>One of the first applications I start up every day is <a href='http://en.wikipedia.org/wiki/Terminal_(OS_X)'>Terminal</a>. I use <strong><a href='http://en.wikipedia.org/wiki/Z_shell'>zsh</a></strong> instead of Bash, with a few <strong><a href='https://github.com/robbyrussell/oh-my-zsh'>oh-my-zsh</a></strong> plugins (you can see which ones at <a href='https://github.com/chrisvanpatten/dotfiles'>my dotfiles repo</a> on Github). I use Terminal for navigating through folders, checking DNS on remote domains, getting dictionary information, working with Git, deploying websites, and much, much more.</p>
+
+<p>One thing I <em>don&#8217;t</em> use it for is text editing. While I&#8217;ve been pretty frequently hounded to look into Vim, my basic text-editing needs on the command line are well-covered by nano. When I need to do serious text-editing, I look no further than <strong><a href='http://www.sublimetext.com/2'>Sublime Text 2</a></strong>. It&#8217;s the best text editor I&#8217;ve ever used. The plugin architecture, theme capabilities, and command-line integration make it a no brainer. I haven&#8217;t registered yet, but intend to very soon. It will be worth every penny.</p>
+
+<p>When I need to do a bit more intense folder navigation (mainly when I need to move files around or see directory structures in a way <code>ls</code> can&#8217;t show them) I turn to Finder, and specifically the <strong><a href='http://totalfinder.binaryage.com/'>Total Finder</a></strong> application. Total Finder brings tabs, dual-pane browsing, and many more useful features to Finder. It&#8217;s a must-have.</p>
+
+<p>Although I&#8217;ve started moving away from SFTP as a deployment mechanism, I keep <strong><a href='http://cyberduck.ch/'>Cyberduck</a></strong> around for occasions where an SFTP client becomes necessary. It&#8217;s also useful for browsing remote S3 buckets, so it is very useful in that regard.</p>
+
+<h4 id='in_the_browser'>In the browser</h4>
+
+<p>Finally, I have a few tools I use for in-browser work. First and foremost are Chrome&#8217;s excellent <strong><a href='https://developers.google.com/chrome-developer-tools/'>Developer Tools</a></strong>. They can&#8217;t be beat (although admittedly Firefox is gaining ground with <a href='http://blog.mozilla.org/blog/2012/01/31/firefox-adds-powerful-new-developer-tools/'>their own native set</a>). For debugging, speed profiling, and so much more, you don&#8217;t need to look anywhere else.</p>
+
+<p>I&#8217;ve just become addicted to <strong><a href='http://livereload.com/'>LiveReload</a></strong>. I would rather have this type of feature handled in the command line, but <a href='https://github.com/guard/guard-livereload'>guard-livereload</a> seems to be designed primarily for Ruby-based apps. I&#8217;m working mostly in PHP, and although we have a Ruby-based deployment architecture it just doesn&#8217;t fit into our setup. The app is flawless though, and although I wish it could be invoked from the command line it does exactly what it says on the tin with no complaints.</p>
+
+<p>For mobile browser work, <strong><a href='http://labs.adobe.com/technologies/shadow/'>Adobe Shadow</a></strong> is excellent. It&#8217;s basically a nice wrapper around <a href='http://people.apache.org/~pmuellr/weinre/'>weinre</a>, but the wrapper makes it easy and fast. The bundled weinre Web Inspector isn&#8217;t always perfect: CSS values don&#8217;t always reflect reality, and changing values almost always breaks thing. Still, it&#8217;s excellent for a side-by-side look at the state of your site.</p>
+
+<h4 id='theres_more'>There&#8217;s more</h4>
+
+<p>There&#8217;s a whole lot more that I didn&#8217;t cover, my browser of choice, music app, markdown editor, the software stack I use to power the websites I build, password manager, etc. I could go on all day if I tried! Still, this is a good introduction to some great tools that are making my day-to-day easy and (often times) fun.</p></div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>

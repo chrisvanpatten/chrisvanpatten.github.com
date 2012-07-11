@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Theme wrappers sans spanning</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700,300">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Emblema+One">
+	<link rel="stylesheet" href="/css/global.css?120711094704">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-575101-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+	<body>
+		<div class="container">
+			<header id="header"><h1>
+	<a href="/" id="logo">cvp vs. world</a>
+</h1></header>
+			<div id="content">
+				<article id="post">
+					<h2 id="post-title">Theme wrappers sans spanning</h2>
+
+					<div class="entry-content"><p>Last night at the Buffalo WordPress Meetup I did a little talk about theme wrappers. I briefly alluded to the dangers of tag spanning but didn&#8217;t follow up on it, and when I live-converted a theme to use theme wrappers I didn&#8217;t convert it to the format I typically use that repurposes header.php and footer.php to help prevent tag spanning. I thought I&#8217;d go over it here to help clear that up!</p>
+
+<p>In the final example I showed, where I converted a site to the theme wrapper method live, tag spanning was still in place because I used the get_header and get_footer functions for their typical purpose (and the way I had originally used them in the theme). This is <em>totally okay</em> if that&#8217;s how you like to work, but I actually ended up modifying that base.php file this morning to make it a little more sane.</p>
+
+<p>Here&#8217;s how you can do that too.</p>
+
+<p>First, create a new file: head.php. Head.php is a partial that contains the entire content of the <code>&lt;head&gt;</code> HTML tag, and the opening and closing tags themselves. Now where that markup would normally be included in header.php, I just add <code>&lt;?php get_template_part(&#39;head&#39;); ?&gt;</code> to pull in the head.php partial.</p>
+
+<p>There&#8217;s no real reason to do this other than keeping a lot of code out of my base.php file and keeping things a little cleaner. I think it just overall makes it easier to parse through a file and get to relevant content faster, but that&#8217;s just me. And because the <code>&lt;head&gt;</code> tag gets opened and closed right within the head.php partial, you don&#8217;t have to worry about spanning. I also like it because I can easily copy head.php between projects that often start with the same basic needs.</p>
+
+<p>Now in your header.php file, copy everything over to your base.php. Keep you header.php file, you&#8217;ll probably want it, but ignore it for now. Replace your call to get_header with what you just copied. Do the same with get_footer and footer.php.</p>
+
+<p>So now your base.php file is a whole lot bigger. But we can trim it back down by looking in your header and footer (in your markup, not those files yet) for the actual header and footer markup that closes itself. <em>That&#8217;s</em> what you want to copy back into your header and footer files, and replace that markup in your base.php file with get_header and get_footer.</p>
+
+<p>Here&#8217;s a gist that shows the finished base.php.</p>
+<script src='https://gist.github.com/2509424.js?file=base.php'> </script>
+<p>I hope this makes some sense. Let me know if you have any questions and what you think of this method!</p></div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>
