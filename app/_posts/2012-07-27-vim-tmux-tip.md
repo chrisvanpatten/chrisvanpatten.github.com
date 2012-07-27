@@ -8,9 +8,9 @@ categories:
 - Computers & Technology
 ---
 
-I recently switched cold turkey to **[Vim](http://www.vim.org/)**, in the first part of an effort to move my development environment to apps I could use (in theory) everywhere and trust to have in place for a long time. Sublime Text 2&emdash;which I mentioned using in my [dev setup](http://www.chrisvanpatten.com/blog/2012/06/dev-setup/) post&emdash;is great, but it's only maintained by oe guy, it's expensive at $60 for a license, and not available on servers because it's a GUI-based app.
+I recently switched cold turkey to **[Vim](http://www.vim.org/)**, in the first part of an effort to move my development environment to apps I could use (in theory) everywhere and trust to have in place for a long time. Sublime Text 2&mdash;which I mentioned using in my [dev setup](http://www.chrisvanpatten.com/blog/2012/06/dev-setup/) post&mdash;is great, but it's only maintained by oe guy, it's expensive at $60 for a license, and not available on servers because it's a GUI-based app.
 
-Vim has been around for (literally) decades&emdash;over 20 years, in fact. There's no doubt its development is stable and it'll be reliably available. It's free software (as in beer and speech) and it has an active developer community contributing plugins and neat new improvements. Plus, Vim's unique syntax (once you master it) makes you faster and more efficient than any other text editor available.
+Vim has been around for (literally) decades&mdash;over 20 years, in fact. There's no doubt its development is stable and it'll be reliably available. It's free software (as in beer and speech) and it has an active developer community contributing plugins and neat new improvements. Plus, Vim's unique syntax (once you master it) makes you faster and more efficient than any other text editor available.
 
 I was also interested in running Vim inside **[tmux](http://tmux.sourceforge.net/)**, a terminal multiplexer describing itself as an alternative to GNU Screen. A terminal multiplexer provides a nice alternative to tabs in your terminal emulator (like iTerm or Terminal.app) because
 
