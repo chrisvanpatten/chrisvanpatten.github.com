@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Get tmux and Vim to play nice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,700,300">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cabin:700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Emblema+One">
+	<link rel="stylesheet" href="/css/global.css?120727095038">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-575101-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+	<body>
+		<div class="container">
+			<header id="header"><h1>
+	<a href="/" id="logo">cvp vs. world</a>
+</h1></header>
+			<div id="content">
+				<article id="post">
+					<h2 id="post-title">Get tmux and Vim to play nice</h2>
+
+					<div class="entry-content"><p>I recently switched cold turkey to <strong><a href='http://www.vim.org/'>Vim</a></strong>, in the first part of an effort to move my development environment to apps I could use (in theory) everywhere and trust to have in place for a long time. Sublime Text 2&emdash;which I mentioned using in my <a href='http://www.chrisvanpatten.com/blog/2012/06/dev-setup/'>dev setup</a> post&emdash;is great, but it&#8217;s only maintained by oe guy, it&#8217;s expensive at $60 for a license, and not available on servers because it&#8217;s a GUI-based app.</p>
+
+<p>Vim has been around for (literally) decades&emdash;over 20 years, in fact. There&#8217;s no doubt its development is stable and it&#8217;ll be reliably available. It&#8217;s free software (as in beer and speech) and it has an active developer community contributing plugins and neat new improvements. Plus, Vim&#8217;s unique syntax (once you master it) makes you faster and more efficient than any other text editor available.</p>
+
+<p>I was also interested in running Vim inside <strong><a href='http://tmux.sourceforge.net/'>tmux</a></strong>, a terminal multiplexer describing itself as an alternative to GNU Screen. A terminal multiplexer provides a nice alternative to tabs in your terminal emulator (like iTerm or Terminal.app) because</p>
+
+<ul>
+<li>&#8220;Sessions&#8221; are persistent - meaning you can close, or &#8220;detach&#8221; yourself from a session, and it will (essentially) be frozen while you&#8217;re gone. Particularly useful for saving your place when working with a server.</li>
+
+<li>You can actually have multiple panes visible at once, making it easier to see a several different tasks at once.</li>
+</ul>
+
+<p>With Vim and tmux working side by side, I would be able to edit in one pane, see my asset compilation in another pane, monitor server stats in another tmux tab, and have <code>git status</code> visible in another pane. Sort of an ultimate developer HUD.</p>
+
+<p>Unfortunately, Vim and tmux don&#8217;t play nicely out of the box. They both require lots of keyboard shortcuts to work, and even once you&#8217;ve remapped them so there are no conflicts (your first order of business if you&#8217;re having trouble) you might still have problems with things being sent incorrectly. In particular, I had trouble with the arrow keys. I use them to navigate between Vim panes, and it was driving me mad not being able to move around fluidly!</p>
+
+<p>After lots of searching around the web though, I finally found two lines of config that were able to get Vim and tmux working together like long time best friends. Arrow keys now work flawlessly! <strong>Here&#8217;s what I did:</strong></p>
+
+<p>First, in your .vimrc: <code>map &lt;Esc&gt;[B &lt;Down&gt; </code></p>
+
+<p>And then in your .tmux.conf: <code>set-window-option -g xterm-keys on</code></p>
+
+<p>It&#8217;s important to note that this assumes you have tmux reporting itself as an xterm-compatible terminal (for best color compatibility, you probably should anyway). But once you do this, your problems should evaporate and you&#8217;ll have an awesome terminal-based development environment going.</p></div>
+				</article>
+			</div>
+		</div>
+	</body>
+</html>
