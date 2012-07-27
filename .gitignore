@@ -10,6 +10,7 @@ database.yml
 cache
 css
 _site
+public
 
 # Vagranty things
 .vagrant
