@@ -1,5 +1,6 @@
 ---
 date: '2012-04-14 09:47:10'
+layout: post
 slug: about
 status: publish
 title: About Chris
