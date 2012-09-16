@@ -1,20 +1,5 @@
-# WordPress
-public/content/uploads
-
-# Ignore environment config (passwords)
-database.yml
-
-# Misc.
 .sass-cache
 .DS_Store
 cache
-css
 _site
 public
-
-# Vagranty things
-.vagrant
-vagrant_nginx_postprocess
-site.pp
-.cache
-vagrant-custom.rb

@@ -1,0 +1,231 @@
+/* line 17, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-1.8.7-p357/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+  Mixins are slightly modified from Benjamin Doherty's first implementations: http://gist.github.com/377912
+  rgba-background mixin can now be passed an option $dir variable
+*/
+/* line 6, ../_sass/global.scss */
+body {
+  background: #FCF9F9;
+}
+
+/* line 10, ../_sass/global.scss */
+#logo {
+  display: block;
+  padding: 70px 10px;
+  font: 60px 'Emblema One';
+  letter-spacing: -1px;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 0 #f6efef, 3px 3px 0 #d98c8c;
+  color: #900;
+  background: #F6EFEF;
+  border-bottom: 2px dotted #eddfdf;
+}
+/* line 24, ../_sass/global.scss */
+#logo:hover {
+  background: #f2e8e8;
+  border-bottom: 2px dotted #e4cece;
+  text-shadow: 2px 2px 0 #f2e8e8, 3px 3px 0 #d98c8c;
+}
+
+/* line 32, ../_sass/global.scss */
+#posts li {
+  margin: 0 0 40px;
+}
+/* line 35, ../_sass/global.scss */
+#posts li h2 {
+  font: 28px/1.2 "Cabin", sans-serif;
+  margin: 0 0 8px;
+}
+/* line 40, ../_sass/global.scss */
+#posts li a {
+  text-decoration: none;
+  color: #000;
+}
+/* line 44, ../_sass/global.scss */
+#posts li a:hover {
+  background: #EEE;
+}
+/* line 49, ../_sass/global.scss */
+#posts li span {
+  display: block;
+  font: 14px monospace;
+  color: #999;
+}
+
+/* line 57, ../_sass/global.scss */
+#pages {
+  display: none;
+}
+
+/* line 61, ../_sass/global.scss */
+#content {
+  max-width: 700px;
+  width: 70%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 70px 20px 100px;
+}
+/* line 68, ../_sass/global.scss */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-family: 'Cabin', sans-serif;
+  line-height: 1.2;
+}
+
+/* line 74, ../_sass/global.scss */
+.entry-content {
+  font: 20px/2 "Open Sans", sans-serif;
+}
+
+/* line 79, ../_sass/global.scss */
+#post h3, #post h4, #post h5, #post h6 {
+  margin: 50px 0 0;
+}
+/* line 83, ../_sass/global.scss */
+#post h1 {
+  font-size: 36px;
+}
+/* line 87, ../_sass/global.scss */
+#post h2 {
+  font-size: 32px;
+}
+/* line 91, ../_sass/global.scss */
+#post h3 {
+  font-size: 28px;
+}
+/* line 95, ../_sass/global.scss */
+#post h4 {
+  font-size: 24px;
+}
+/* line 99, ../_sass/global.scss */
+#post p {
+  margin: 30px 0 0;
+  text-align: justify;
+}
+/* line 104, ../_sass/global.scss */
+#post code {
+  font-family: monospace;
+}
+/* line 108, ../_sass/global.scss */
+#post strong {
+  font-weight: bold;
+}
+/* line 112, ../_sass/global.scss */
+#post em {
+  font-style: italic;
+}
+/* line 116, ../_sass/global.scss */
+#post code {
+  background: #EFEFEF;
+  border: 1px solid #CCC;
+  padding: 2px 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 124, ../_sass/global.scss */
+#post ol, #post ul {
+  margin: 20px 0 0;
+}
+/* line 127, ../_sass/global.scss */
+#post ol li, #post ul li {
+  margin: 10px 0 0 40px;
+}
+/* line 132, ../_sass/global.scss */
+#post ol {
+  list-style: decimal-leading-zero;
+}
+/* line 136, ../_sass/global.scss */
+#post ul {
+  list-style: disc;
+}
+/* line 140, ../_sass/global.scss */
+#post blockquote {
+  padding: 0 20px 0 18px;
+  margin-left: 20px;
+  border-left: 2px dotted #eddfdf;
+  font-style: italic;
+}
+
+@media handheld, only screen and (max-width: 479px) {
+  /* line 149, ../_sass/global.scss */
+  #logo {
+    padding: 30px 10px;
+  }
+
+  /* line 153, ../_sass/global.scss */
+  #content {
+    padding: 40px 20px 50px;
+  }
+
+  /* line 157, ../_sass/global.scss */
+  #post p {
+    text-align: left;
+  }
+}

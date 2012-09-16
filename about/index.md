@@ -1,10 +1,8 @@
 ---
 date: '2012-04-14 09:47:10'
-layout: page
 slug: about
 status: publish
 title: About Chris
-wordpress_id: '604'
 ---
 
 **[Chris Van Patten](http://www.chrisvanpatten.com/)** is a website designer and theatre artist.
