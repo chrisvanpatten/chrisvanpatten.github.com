@@ -10,9 +10,6 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rgbapng (0.1.1)
-      chunky_png (>= 0.8.0)
-      compass (>= 0.10.0)
     directory_watcher (1.4.1)
     fast-stemmer (1.0.1)
     fssm (0.2.9)
@@ -36,6 +33,5 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  compass-rgbapng
   jekyll (= 0.11.0)
   liquid (= 2.2.2)
