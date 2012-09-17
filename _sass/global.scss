@@ -4,20 +4,17 @@
 
 @import "misc/variables"; 
 
-body {
-//	background: #FCF9F9;
-}
-
+@import "layout/header";
 @import "layout/inner_header";
 
-#logo {
-	display: block;
-
-	padding: 90px 0 50px;
-	text-align: center;
-	font: 60px/1 $header-font;
-	color: #000;
+a {
+	color: desaturate( blue, 65% );
 	text-decoration: none;
+
+	&:hover {
+		color: desaturate( blue, 40% );
+		text-decoration: underline;
+	}
 }
 
 #content {
@@ -33,111 +30,8 @@ body {
 	}
 }
 
-#posts {
-	li {
-		margin: 0 0 40px;
-		text-align: center;
-
-		h2 {
-			font-size: 28px;
-			margin: 0 0 8px;
-		}
-
-		a {
-			text-decoration: none;
-			color: #000;
-
-			&:hover {
-				background: #EEE;
-			}
-		}
-
-		span {
-			display: block;
-			font: 14px $body-font;
-			color: #999;
-		}
-	}
-}
-
-#pages {
-	display: none;
-}
-
-.entry-content {
-	font: 20px/2 $body-font;
-}
-
-#post {
-	color: #444;
-
-	h3, h4, h5, h6 {
-		margin: 50px 0 0;
-		color: #000;
-	}
-
-	h3 {
-		font-size: 28px;
-	}
-
-	h4 {
-		font-size: 24px;
-	}
-
-	p {
-		margin: 30px 0 0;
-		text-align: justify;
-	}
-
-	code {
-		font-family: monospace;
-	}
-
-	strong {
-		font-weight: bold;
-	}
-
-	em {
-		font-style: italic;
-	}
-
-	code {
-		background: #EFEFEF;
-		border: 1px solid #CCC;
-		padding: 2px 3px;
-		@include border-radius(3px);
-		//@include nowrap;
-	}
-
-	ol, ul {
-		margin: 20px 0 0;
-
-		li {
-			margin: 10px 0 0 40px;
-		}
-	}
-
-	ol {
-		list-style: decimal-leading-zero;
-	}
-
-	ul {
-		list-style: disc;
-	}
-
-	blockquote {
-		padding: 0 20px 0 18px;
-		margin-left: 20px;
-		border-left: 2px dotted darken(#F6EFEF, 5%);
-		font-style: italic;
-	}
-}
-
-#post-title {
-	font-size: 36px;
-	text-align: center;
-	color: #000;
-}
+@import "layout/homepage";
+@import "layout/post";
 
 @media handheld, only screen and (max-width: 479px) {
 	#logo {
