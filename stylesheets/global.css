@@ -63,118 +63,127 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../_sass/global.scss */
-body {
-  background: #FCF9F9;
+/* line 1, ../_sass/layout/_inner_header.scss */
+#inner_header {
+  padding: 10px;
+  display: block;
+  font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+/* line 6, ../_sass/layout/_inner_header.scss */
+#inner_header a {
+  text-decoration: none;
 }
 
-/* line 9, ../_sass/global.scss */
+/* line 11, ../_sass/layout/_inner_header.scss */
+#inner_header-left_nav {
+  float: left;
+}
+
+/* line 15, ../_sass/layout/_inner_header.scss */
+#inner_header-post_nav {
+  float: right;
+  text-align: right;
+}
+/* line 19, ../_sass/layout/_inner_header.scss */
+#inner_header-post_nav a {
+  margin: 0 0 0 10px;
+}
+
+/* line 13, ../_sass/global.scss */
 #logo {
   display: block;
-  padding: 70px 10px;
-  font: 60px 'Emblema One';
-  letter-spacing: -1px;
-  text-decoration: none;
+  padding: 90px 0 50px;
   text-align: center;
-  text-shadow: 2px 2px 0 #f6efef, 3px 3px 0 #d98c8c;
-  color: #900;
-  background: #F6EFEF;
-  border-bottom: 2px dotted #eddfdf;
-}
-/* line 23, ../_sass/global.scss */
-#logo:hover {
-  background: #f2e8e8;
-  border-bottom: 2px dotted #e4cece;
-  text-shadow: 2px 2px 0 #f2e8e8, 3px 3px 0 #d98c8c;
+  font: 60px/1 "ltc-bodoni-175", "Palatino Linotype", "Book Antiqua", "Palatino", Georgia, "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
+  color: #000;
+  text-decoration: none;
 }
 
-/* line 31, ../_sass/global.scss */
+/* line 23, ../_sass/global.scss */
+#content {
+  max-width: 600px;
+  width: 70%;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 90px 20px 130px;
+}
+/* line 30, ../_sass/global.scss */
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
+  font-family: "ltc-bodoni-175", "Palatino Linotype", "Book Antiqua", "Palatino", Georgia, "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
+  line-height: 1.2;
+}
+
+/* line 37, ../_sass/global.scss */
 #posts li {
   margin: 0 0 40px;
+  text-align: center;
 }
-/* line 34, ../_sass/global.scss */
+/* line 41, ../_sass/global.scss */
 #posts li h2 {
-  font: 28px/1.2 "Cabin", sans-serif;
+  font-size: 28px;
   margin: 0 0 8px;
 }
-/* line 39, ../_sass/global.scss */
+/* line 46, ../_sass/global.scss */
 #posts li a {
   text-decoration: none;
   color: #000;
 }
-/* line 43, ../_sass/global.scss */
+/* line 50, ../_sass/global.scss */
 #posts li a:hover {
   background: #EEE;
 }
-/* line 48, ../_sass/global.scss */
+/* line 55, ../_sass/global.scss */
 #posts li span {
   display: block;
-  font: 14px monospace;
+  font: 14px "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
   color: #999;
 }
 
-/* line 56, ../_sass/global.scss */
+/* line 63, ../_sass/global.scss */
 #pages {
   display: none;
 }
 
-/* line 60, ../_sass/global.scss */
-#content {
-  max-width: 700px;
-  width: 70%;
-  min-width: 280px;
-  margin: 0 auto;
-  padding: 70px 20px 100px;
-}
 /* line 67, ../_sass/global.scss */
-#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
-  font-family: 'Cabin', sans-serif;
-  line-height: 1.2;
-}
-
-/* line 73, ../_sass/global.scss */
 .entry-content {
-  font: 20px/2 "Open Sans", sans-serif;
+  font: 20px/2 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 
-/* line 78, ../_sass/global.scss */
+/* line 71, ../_sass/global.scss */
+#post {
+  color: #444;
+}
+/* line 74, ../_sass/global.scss */
 #post h3, #post h4, #post h5, #post h6 {
   margin: 50px 0 0;
+  color: #000;
 }
-/* line 82, ../_sass/global.scss */
-#post h1 {
-  font-size: 36px;
-}
-/* line 86, ../_sass/global.scss */
-#post h2 {
-  font-size: 32px;
-}
-/* line 90, ../_sass/global.scss */
+/* line 79, ../_sass/global.scss */
 #post h3 {
   font-size: 28px;
 }
-/* line 94, ../_sass/global.scss */
+/* line 83, ../_sass/global.scss */
 #post h4 {
   font-size: 24px;
 }
-/* line 98, ../_sass/global.scss */
+/* line 87, ../_sass/global.scss */
 #post p {
   margin: 30px 0 0;
   text-align: justify;
 }
-/* line 103, ../_sass/global.scss */
+/* line 92, ../_sass/global.scss */
 #post code {
   font-family: monospace;
 }
-/* line 107, ../_sass/global.scss */
+/* line 96, ../_sass/global.scss */
 #post strong {
   font-weight: bold;
 }
-/* line 111, ../_sass/global.scss */
+/* line 100, ../_sass/global.scss */
 #post em {
   font-style: italic;
 }
-/* line 115, ../_sass/global.scss */
+/* line 104, ../_sass/global.scss */
 #post code {
   background: #EFEFEF;
   border: 1px solid #CCC;
@@ -185,23 +194,23 @@ body {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 123, ../_sass/global.scss */
+/* line 112, ../_sass/global.scss */
 #post ol, #post ul {
   margin: 20px 0 0;
 }
-/* line 126, ../_sass/global.scss */
+/* line 115, ../_sass/global.scss */
 #post ol li, #post ul li {
   margin: 10px 0 0 40px;
 }
-/* line 131, ../_sass/global.scss */
+/* line 120, ../_sass/global.scss */
 #post ol {
   list-style: decimal-leading-zero;
 }
-/* line 135, ../_sass/global.scss */
+/* line 124, ../_sass/global.scss */
 #post ul {
   list-style: disc;
 }
-/* line 139, ../_sass/global.scss */
+/* line 128, ../_sass/global.scss */
 #post blockquote {
   padding: 0 20px 0 18px;
   margin-left: 20px;
@@ -209,18 +218,25 @@ body {
   font-style: italic;
 }
 
+/* line 136, ../_sass/global.scss */
+#post-title {
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+}
+
 @media handheld, only screen and (max-width: 479px) {
-  /* line 148, ../_sass/global.scss */
+  /* line 143, ../_sass/global.scss */
   #logo {
     padding: 30px 10px;
   }
 
-  /* line 152, ../_sass/global.scss */
+  /* line 147, ../_sass/global.scss */
   #content {
     padding: 40px 20px 50px;
   }
 
-  /* line 156, ../_sass/global.scss */
+  /* line 151, ../_sass/global.scss */
   #post p {
     text-align: left;
   }

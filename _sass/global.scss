@@ -2,37 +2,44 @@
 @import "compass/css3";
 @import "compass/typography/text";
 
+@import "misc/variables"; 
+
 body {
-	background: #FCF9F9;
+//	background: #FCF9F9;
 }
+
+@import "layout/inner_header";
 
 #logo {
 	display: block;
-	padding: 70px 10px;
-	font: 60px 'Emblema One';
-	letter-spacing: -1px;
-	text: {
-		decoration: none;
-		align: center;
-	}
-	@include text-shadow(2px 2px 0 #F6EFEF, 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
-	color: #900;
-	background: #F6EFEF;
-	border-bottom: 2px dotted darken(#F6EFEF, 5%);
 
-	&:hover {
-		background: darken(#F6EFEF, 2%);
-		border-bottom: 2px dotted darken(#F6EFEF, 10%);
-		@include text-shadow(2px 2px 0 darken(#F6EFEF, 2%), 3px 3px 0 desaturate(lighten(#900, 40%), 50%));
+	padding: 90px 0 50px;
+	text-align: center;
+	font: 60px/1 $header-font;
+	color: #000;
+	text-decoration: none;
+}
+
+#content {
+	max-width: 600px;
+	width: 70%;
+	min-width: 280px;
+	margin: 0 auto;
+	padding: 90px 20px 130px;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $header-font;
+		line-height: 1.2;
 	}
 }
 
 #posts {
 	li {
 		margin: 0 0 40px;
+		text-align: center;
 
 		h2 {
-			font: 28px/1.2 'Cabin', sans-serif;
+			font-size: 28px;
 			margin: 0 0 8px;
 		}
 
@@ -47,7 +54,7 @@ body {
 
 		span {
 			display: block;
-			font: 14px monospace;
+			font: 14px $body-font;
 			color: #999;
 		}
 	}
@@ -57,34 +64,16 @@ body {
 	display: none;
 }
 
-#content {
-	max-width: 700px;
-	width: 70%;
-	min-width: 280px;
-	margin: 0 auto;
-	padding: 70px 20px 100px;
-
-	h1, h2, h3, h4, h5, h6 {
-		font-family: 'Cabin', sans-serif;
-		line-height: 1.2;
-	}
-}
-
 .entry-content {
-	font: 20px/2 'Open Sans', sans-serif;
+	font: 20px/2 $body-font;
 }
 
 #post {
+	color: #444;
+
 	h3, h4, h5, h6 {
 		margin: 50px 0 0;
-	}
-
-	h1 {
-		font-size: 36px;
-	}
-
-	h2 {
-		font-size: 32px;
+		color: #000;
 	}
 
 	h3 {
@@ -142,6 +131,12 @@ body {
 		border-left: 2px dotted darken(#F6EFEF, 5%);
 		font-style: italic;
 	}
+}
+
+#post-title {
+	font-size: 36px;
+	text-align: center;
+	color: #000;
 }
 
 @media handheld, only screen and (max-width: 479px) {

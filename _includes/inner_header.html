@@ -1,0 +1,15 @@
+<header id="inner_header">
+	<div id="inner_header-left_nav">
+		<h1>
+			<a href="/">cvp vs. world</a>
+		</h1>
+	</div>
+	<section id="inner_header-post_nav">
+		{% if page.previous %}
+		<a href="{{ page.previous.url }}">&larr; Previous</a>
+		{% endif %}
+		{% if page.next %}
+		<a href="{{ page.next.url }}">Next &rarr;</a>
+		{% endif %}
+	</section>
+</header>
