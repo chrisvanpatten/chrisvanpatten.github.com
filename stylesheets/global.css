@@ -84,13 +84,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #inner_header-left_nav {
   float: left;
 }
+/* line 10, ../_sass/layout/_inner_header.scss */
+#inner_header-left_nav h1 {
+  display: inline;
+}
 
-/* line 11, ../_sass/layout/_inner_header.scss */
+/* line 15, ../_sass/layout/_inner_header.scss */
+#splitter {
+  color: #CCC;
+  margin: 0 4px;
+}
+
+/* line 20, ../_sass/layout/_inner_header.scss */
 #inner_header-post_nav {
   float: right;
   text-align: right;
 }
-/* line 15, ../_sass/layout/_inner_header.scss */
+/* line 24, ../_sass/layout/_inner_header.scss */
 #inner_header-post_nav a {
   margin: 0 0 0 10px;
 }

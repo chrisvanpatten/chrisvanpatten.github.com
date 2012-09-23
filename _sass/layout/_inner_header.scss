@@ -6,6 +6,15 @@
 
 #inner_header-left_nav {
 	float: left;
+
+	h1 {
+		display: inline;
+	}
+}
+
+#splitter {
+	color: #CCC;
+	margin: 0 4px;
 }
 
 #inner_header-post_nav {
