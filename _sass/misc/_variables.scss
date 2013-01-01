@@ -5,3 +5,21 @@ $serif: 'Palatino Linotype', 'Book Antiqua', 'Palatino', Georgia, 'Times New Rom
 // Fonts
 $body-font: 'proxima-nova', $sans-serif;
 $header-font: 'ltc-bodoni-175', $serif;
+
+// Clearfix
+%clearfix:before, %clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+%clearfix:after {
+	clear: both;
+}
+
+%clearfix {
+	zoom: 1;
+}

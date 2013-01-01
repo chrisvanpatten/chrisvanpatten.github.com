@@ -7,12 +7,16 @@
 @import "layout/header";
 @import "layout/inner_header";
 
+body {
+	font-family: $body-font;
+}
+
 a {
-	color: desaturate( blue, 65% );
+	color: black;
+	font-weight: bold;
 	text-decoration: none;
 
 	&:hover {
-		color: desaturate( blue, 40% );
 		text-decoration: underline;
 	}
 }
@@ -25,7 +29,7 @@ a {
 	padding: 90px 20px 130px;
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: $header-font;
+		//font-family: $header-font;
 		line-height: 1.2;
 	}
 }
