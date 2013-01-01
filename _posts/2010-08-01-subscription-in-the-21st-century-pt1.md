@@ -1,5 +1,4 @@
 ---
-date: '2010-08-01 11:55:05'
 layout: post
 slug: subscription-in-the-21st-century-pt1
 status: publish

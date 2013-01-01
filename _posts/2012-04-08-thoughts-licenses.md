@@ -1,5 +1,4 @@
 ---
-date: '2012-04-08 20:02:37'
 layout: post
 slug: thoughts-licenses
 status: publish

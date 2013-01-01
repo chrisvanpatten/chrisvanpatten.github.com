@@ -1,5 +1,4 @@
 ---
-date: '2011-12-27 06:37:22'
 layout: post
 slug: perspective
 status: publish

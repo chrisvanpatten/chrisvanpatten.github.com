@@ -1,5 +1,4 @@
 ---
-date: '2010-05-21 22:52:28'
 layout: post
 slug: willy-wonka-the-chocolate-factory-1971
 status: publish

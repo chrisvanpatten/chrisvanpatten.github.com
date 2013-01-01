@@ -1,5 +1,4 @@
 ---
-date: '2012-02-05 00:23:22'
 layout: post
 slug: van-patten-media-goodies
 status: publish

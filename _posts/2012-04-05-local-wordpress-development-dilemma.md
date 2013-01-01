@@ -1,5 +1,4 @@
 ---
-date: '2012-04-05 23:24:06'
 layout: post
 slug: local-wordpress-development-dilemma
 status: publish

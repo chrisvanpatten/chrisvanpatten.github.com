@@ -1,5 +1,4 @@
 ---
-date: '2012-03-17 17:58:27'
 layout: post
 slug: quick-suitcase-fusion-3-tip
 status: publish

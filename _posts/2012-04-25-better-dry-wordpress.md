@@ -1,5 +1,4 @@
 ---
-date: '2012-04-25 11:07:03'
 layout: post
 slug: better-dry-wordpress
 status: publish

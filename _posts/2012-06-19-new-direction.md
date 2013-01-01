@@ -1,5 +1,4 @@
 ---
-date: '2012-06-19 20:57:00'
 layout: post
 slug: new-direction
 status: publish

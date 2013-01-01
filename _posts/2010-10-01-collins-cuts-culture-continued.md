@@ -1,5 +1,4 @@
 ---
-date: '2010-10-01 01:17:02'
 layout: post
 slug: collins-cuts-culture-continued
 status: publish

@@ -1,5 +1,4 @@
 ---
-date: '2012-04-20 13:54:10'
 layout: post
 slug: dry-wordpress-themes
 status: publish

@@ -1,5 +1,4 @@
 ---
-date: '2012-04-27 09:52:20'
 layout: post
 slug: theme-wrappers-sans-spanning
 status: publish

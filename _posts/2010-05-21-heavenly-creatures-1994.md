@@ -1,5 +1,4 @@
 ---
-date: '2010-05-21 23:22:52'
 layout: post
 slug: heavenly-creatures-1994
 status: publish

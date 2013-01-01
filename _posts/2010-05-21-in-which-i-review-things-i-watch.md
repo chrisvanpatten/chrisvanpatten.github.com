@@ -1,5 +1,4 @@
 ---
-date: '2010-05-21 20:50:39'
 layout: post
 slug: in-which-i-review-things-i-watch
 status: publish

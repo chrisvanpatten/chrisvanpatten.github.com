@@ -1,5 +1,4 @@
 ---
-date: '2012-01-30 21:47:24'
 layout: post
 slug: comma-separated-tagging-delicious-chrome-extension
 status: publish

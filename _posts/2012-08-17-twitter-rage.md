@@ -1,5 +1,4 @@
 ---
-date: '2012-08-17 12:00:00'
 layout: post
 title: 'Twitter sadness'
 ---

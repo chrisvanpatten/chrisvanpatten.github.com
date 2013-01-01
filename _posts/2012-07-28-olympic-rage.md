@@ -1,5 +1,4 @@
 ---
-date: '2012-07-28 12:00:00'
 layout: post
 title: 'Olympic rage (or Chris hates television)'
 ---

@@ -1,5 +1,4 @@
 ---
-date: '2010-05-29 22:40:23'
 layout: post
 slug: the-umbrellas-of-cherbourg-1964
 status: publish

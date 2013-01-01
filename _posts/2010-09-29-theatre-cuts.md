@@ -1,5 +1,4 @@
 ---
-date: '2010-09-29 11:39:06'
 layout: post
 slug: theatre-cuts
 status: publish

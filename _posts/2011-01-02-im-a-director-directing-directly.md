@@ -1,5 +1,4 @@
 ---
-date: '2011-01-02 12:44:49'
 layout: post
 slug: im-a-director-directing-directly
 status: publish

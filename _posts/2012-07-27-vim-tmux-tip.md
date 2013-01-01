@@ -1,5 +1,4 @@
 ---
-date: '2012-07-27 10:00:00'
 layout: post
 slug: vim-tmux-tip
 status: publish

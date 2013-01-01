@@ -1,5 +1,4 @@
 ---
-date: '2012-04-14 16:23:55'
 layout: post
 slug: sexy-style-sheets-sass-compass
 status: publish

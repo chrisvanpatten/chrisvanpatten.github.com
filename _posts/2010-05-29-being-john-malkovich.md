@@ -1,5 +1,4 @@
 ---
-date: '2010-05-29 23:13:52'
 layout: post
 slug: being-john-malkovich
 status: publish

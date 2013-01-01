@@ -1,5 +1,4 @@
 ---
-date: '2010-06-28 15:22:39'
 layout: post
 slug: deeper-thoughts
 status: publish

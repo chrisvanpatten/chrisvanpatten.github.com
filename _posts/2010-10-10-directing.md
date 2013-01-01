@@ -1,5 +1,4 @@
 ---
-date: '2010-10-10 11:20:23'
 layout: post
 slug: directing
 status: publish

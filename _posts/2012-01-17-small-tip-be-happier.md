@@ -1,5 +1,4 @@
 ---
-date: '2012-01-17 15:41:25'
 layout: post
 slug: small-tip-be-happier
 status: publish

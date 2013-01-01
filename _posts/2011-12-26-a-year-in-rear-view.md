@@ -1,5 +1,4 @@
 ---
-date: '2011-12-26 07:03:37'
 layout: post
 slug: a-year-in-rear-view
 status: publish

@@ -1,5 +1,4 @@
 ---
-date: '2010-06-01 01:36:49'
 layout: post
 slug: sunshine-cleaning-2008
 status: publish
