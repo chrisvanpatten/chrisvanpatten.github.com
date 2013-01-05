@@ -1,14 +1,25 @@
 ---
 title: ChrisVanPatten.com
-layout: default
-description: A description about my blog homepage
+description: My blog homepage
 ---
 
-<ul id="posts">
-{% for post in site.posts %}
-	<li>
-		<time>{{ post.date | date: "%d %b %Y" }}</time>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-	</li>
-{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+	{% include head.html %}
+	<body>
+		{% include header.html %}
+		<div id="content">
+			<header>
+				<h1 id="logo">cvp vs. world</h1>
+			</header>
+			<ul id="posts">
+			{% for post in site.posts %}
+				<li>
+					<time>{{ post.date | date: "%d %b %Y" }}</time>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>
