@@ -1,18 +1,5 @@
-.entry-content {
-	font: 20px/2 $body-font;
-}
-
 #post {
 	color: #444;
-
-	h2, h3, h4, h5, h6 {
-		font-family: $header-font;
-	}
-
-	h3, h4, h5, h6 {
-		margin: 50px 0 0;
-		color: #000;
-	}
 
 	h3 {
 		font-size: 28px;
@@ -22,41 +9,23 @@
 		font-size: 24px;
 	}
 
-	p {
-		margin: 30px 0 0;
-		text-align: justify;
-	}
-
 	code {
 		font-family: monospace;
-	}
-
-	strong {
-		font-weight: bold;
-	}
-
-	em {
-		font-style: italic;
-	}
-
-	code {
-		background: #EFEFEF;
-		border: 1px solid #CCC;
-		padding: 2px 3px;
-		@include border-radius(3px);
-		//@include nowrap;
+		background: #F6F6F6;
+		border: 1px solid #DDD;
+		padding: 3px 4px;
+		@include border-radius(2px);
+		font-size: 95%;
 	}
 
 	ol, ul {
-		margin: 20px 0 0;
-
 		li {
-			margin: 10px 0 0 40px;
+			margin: 5px 0;
 		}
 	}
 
 	ol {
-		list-style: decimal-leading-zero;
+		list-style: lower-roman;
 	}
 
 	ul {
@@ -69,11 +38,4 @@
 		border-left: 2px dotted darken(#F6EFEF, 5%);
 		font-style: italic;
 	}
-}
-
-#post-title {
-	font-size: 42px;
-	text-align: center;
-	color: #000;
-	margin: 0 0 70px;
 }

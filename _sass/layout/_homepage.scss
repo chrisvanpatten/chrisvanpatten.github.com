@@ -1,23 +1,21 @@
+
 #posts {
+	padding: 0;
+	
 	li {
 		margin: 0 0 15px;
 		font-size: 16px;
 		@extend %clearfix;
+		line-height: 21px;
 
-		span {
+		time {
 			display: block;
 			color: #999;
 			width: 20%;
 			min-width: 110px;
 			float: left;
-			font-family: 'menlo', 'monaco', 'inconsolata', monospace;
-			font-size: 80%;
-			line-height: 21px;
-		}
-
-		h2 {
-			float: left;
-			font-weight: bold;
+			font: 80% 'menlo', 'monaco', 'inconsolata', monospace;
+			line-height: inherit;
 		}
 	}
 }

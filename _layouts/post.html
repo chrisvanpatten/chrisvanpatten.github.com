@@ -6,14 +6,14 @@ layout: post
 <html>
 {% include head.html %}
 <body>
-	<div class="container">
-		{% include inner_header.html %}
-		<div id="content">
-			<article id="post">
+	{% include header.html %}
+	<div id="content">
+		<article id="post">
+			<header>
 				<h2 id="post-title">{{ page.title }}</h2>
-				<div class="entry-content">{{ content }}</div>
-			</article>
-		</div>
+			</header>
+			<div class="entry-content">{{ content }}</div>
+		</article>
 	</div>
 </body>
 </html>

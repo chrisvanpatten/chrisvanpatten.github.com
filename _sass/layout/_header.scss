@@ -1,9 +1,28 @@
-#logo {
+#header {
 	display: block;
+	font: 14px/1 $body-font;
+	@extend %clearfix;
+}
 
-	padding: 90px 0 40px;
-	text-align: center;
-	font: 60px/1 $header-font;
-	color: #000;
-	text-decoration: none;
+#header-left_nav {
+	float: left;
+
+	h1 {
+		display: inline;
+		font: 14px/1 $body-font;
+	}
+}
+
+#splitter {
+	color: #CCC;
+	margin: 0 4px;
+}
+
+#header-post_nav {
+	float: right;
+	text-align: right;
+
+	a {
+		margin: 0 0 0 10px;
+	}
 }

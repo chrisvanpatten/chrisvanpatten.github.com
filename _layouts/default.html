@@ -2,12 +2,12 @@
 <html>
 	{% include head.html %}
 	<body>
-		<div class="container">
-			{% include inner_header.html %}
-			{% include header.html %}
-			<div id="content">
-				{{ content }}
-			</div>
+		{% include header.html %}
+		<div id="content">
+			<header>
+				<h1 id="logo">cvp vs. world</h1>
+			</header>
+			{{ content }}
 		</div>
 	</body>
 </html>

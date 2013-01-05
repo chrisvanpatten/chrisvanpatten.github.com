@@ -1,14 +1,12 @@
-@import "compass/reset";
 @import "compass/css3";
 @import "compass/typography/text";
-
 @import "misc/variables"; 
 
 @import "layout/header";
-@import "layout/inner_header";
 
 body {
-	font-family: $body-font;
+	font: 15px/1.7 $body-font;
+	margin: 20px;
 }
 
 a {
@@ -25,28 +23,22 @@ a {
 	max-width: 600px;
 	width: 70%;
 	min-width: 280px;
-	margin: 0 auto;
-	padding: 90px 20px 130px;
+	margin: 90px auto 130px;
 
 	h1, h2, h3, h4, h5, h6 {
-		//font-family: $header-font;
+		font-family: $header-font;
+		font-weight: normal;
 		line-height: 1.2;
+		text-align: center;
+		margin: 1em 0 0;
+	}
+
+	#logo, #post-title {
+		margin: 0 0 70px;
+		font-size: 42px;
+		color: #000;
 	}
 }
 
 @import "layout/homepage";
 @import "layout/post";
-
-@media handheld, only screen and (max-width: 479px) {
-	#logo {
-		padding: 30px 10px;
-	}
-
-	#content {
-		padding: 40px 20px 50px;
-	}
-
-	#post p {
-		text-align: left;
-	}
-}
