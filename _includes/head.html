@@ -1,36 +1,54 @@
 <head>
+	{% if page.homepage %}
+	<title>{{ site.title }}</title>
+	{% else %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+	{% endif %}
+
 	<meta charset="utf-8">
-	<title>{{ page.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/stylesheets/global.css?{{ site.time | date: "%y%m%d%H%M%S" }}">
-
+	
 	<!-- Typekit -->
 	<script type="text/javascript" src="//use.typekit.net/bqy5ewq.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
+	
 	<!-- OpenGraph -->
 	{% capture header %}
-	{% if page.title %}<meta property="og:type" content="article">
-	<meta property="og:title" content="{{ page.title | escape }}">{% else %}<meta property="og:type" content="website">{% endif %}
+	<!-- og:type -->
+	{% if page.homepage %}<meta property="og:type" content="website">{% else %}<meta property="og:type" content="article">{% endif %}
+	
+	<!-- og:site_name -->
 	{% if site.title %}<meta property="og:site_name" content="{{ site.title }}">{% endif %}
+	
+	<!-- og:url -->
 	{% if page.url %}<meta property="og:url" content="{{ site.url }}{{ page.url }}">{% endif %}
+	
+	<!-- og:owner_link -->
 	{% if site.owner_link %}<meta property="article:author" content="{{ site.owner_link }}">{% endif %}
-	{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt }}">{% elsif page.content %}<meta property="og:description" content="{{ page.content | markdownify | strip_html | truncatewords:20 }}">{% endif %}
-	{% endcapture %}
-	{{ header }}
-
+	
+	<!-- og:description / meta description -->
+	{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt }}">
+	<meta name="description" content="{{ page.excerpt }}">
+	{% elsif page.homepage %}<meta property="og:description" content="{{ site.description }}">
+	<meta name="description" content="{{ site.description }}">
+	{% elsif page.content %}<meta property="og:description" content="{{ page.content | strip_html | markdownify | strip_html | truncatewords:20 }}">
+	<meta name="description" content="{{ page.content | strip_html | markdownify | strip_html | truncatewords:20 }}">
+	{% endif %}
+	{% endcapture %}{{ header }}
+	
 	<!-- Google Analytics -->
 	<script type="text/javascript">
-
+	
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-575101-1']);
 	  _gaq.push(['_trackPageview']);
-
+	
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
-
+	
 	</script>
 </head>
