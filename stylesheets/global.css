@@ -76,11 +76,11 @@ a:hover {
 }
 
 /* line 7, ../_sass/layout/_header.scss */
-#header-left_nav {
+.nav {
   float: left;
 }
 /* line 10, ../_sass/layout/_header.scss */
-#header-left_nav h1 {
+.nav h1 {
   display: inline;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
@@ -92,15 +92,17 @@ a:hover {
 }
 
 /* line 21, ../_sass/layout/_header.scss */
-#header-post_nav {
+.pnav {
   float: right;
   text-align: right;
 }
-/* line 25, ../_sass/layout/_header.scss */
-#header-post_nav a {
-  margin: 0 0 0 10px;
-}
 
+@media (max-width: 370px) {
+  /* line 28, ../_sass/layout/_header.scss */
+  .pnav-label {
+    display: none;
+  }
+}
 /* line 1, ../_sass/layout/_content.scss */
 #wrapper {
   padding: 20px;
@@ -141,9 +143,10 @@ a:hover {
   color: #000;
 }
 
-/* line 2, ../_sass/layout/_homepage.scss */
+/* line 1, ../_sass/layout/_homepage.scss */
 #posts {
   padding: 0;
+  list-style: none;
 }
 /* line 5, ../_sass/layout/_homepage.scss */
 #posts li {

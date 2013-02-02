@@ -1,15 +1,18 @@
 <header id="header">
-	<div id="header-left_nav">
+	<nav class="nav">
 		<h1><a href="/">cvp vs. world</a></h1>
 		<span id="splitter">&bull;</span>
 		<a href="/about/">about me</a>
-	</div>
-	<section id="header-post_nav">
+	</nav>
+	<nav class="pnav">
 		{% if page.previous %}
-		<a href="{{ page.previous.url }}">&larr; Previous</a>
+		<a href="{{ page.previous.url }}" class="pnav-prev">&larr;<span class="pnav-label"> Previous</span></a>
+		{% endif %}
+		{% if page.previous and page.next %}
+		<span id="splitter">&bull;</span>
 		{% endif %}
 		{% if page.next %}
-		<a href="{{ page.next.url }}">Next &rarr;</a>
+		<a href="{{ page.next.url }}" class="pnav-next"><span class="pnav-label">Next </span>&rarr;</a>
 		{% endif %}
-	</section>
+	</nav>
 </header>

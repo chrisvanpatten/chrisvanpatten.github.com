@@ -4,7 +4,7 @@
 	@extend %clearfix;
 }
 
-#header-left_nav {
+.nav {
 	float: left;
 
 	h1 {
@@ -18,11 +18,15 @@
 	margin: 0 4px;
 }
 
-#header-post_nav {
+.pnav {
 	float: right;
 	text-align: right;
+}
 
-	a {
-		margin: 0 0 0 10px;
-	}
+@media ( max-width: 370px ) {
+	//.pnav-prev {
+		.pnav-label {
+			display: none;
+		}
+	//}
 }
