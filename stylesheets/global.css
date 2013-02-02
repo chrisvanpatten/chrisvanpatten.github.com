@@ -78,27 +78,28 @@ a:hover {
 /* line 7, ../_sass/layout/_header.scss */
 .nav {
   float: left;
+  text-transform: lowercase;
 }
-/* line 10, ../_sass/layout/_header.scss */
+/* line 11, ../_sass/layout/_header.scss */
 .nav h1 {
   display: inline;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 
-/* line 16, ../_sass/layout/_header.scss */
+/* line 17, ../_sass/layout/_header.scss */
 #splitter {
   color: #CCC;
   margin: 0 4px;
 }
 
-/* line 21, ../_sass/layout/_header.scss */
+/* line 22, ../_sass/layout/_header.scss */
 .pnav {
   float: right;
   text-align: right;
 }
 
 @media (max-width: 370px) {
-  /* line 28, ../_sass/layout/_header.scss */
+  /* line 29, ../_sass/layout/_header.scss */
   .pnav-label {
     display: none;
   }
