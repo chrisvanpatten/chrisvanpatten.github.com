@@ -22,51 +22,49 @@
 #vpm-banner a {
   display: block;
   padding: 10px 8px;
-  background: #DDD;
-  border-bottom: #AAA;
-  -webkit-box-shadow: inset 0 -3px 10px -5px #333333;
-  -moz-box-shadow: inset 0 -3px 10px -5px #333333;
-  box-shadow: inset 0 -3px 10px -5px #333333;
-  color: #444;
-  text-shadow: 0 1px 1px white;
+  background: url('/images/vpm-banner.jpg?1359833241') center center no-repeat;
+  -webkit-box-shadow: inset 0 -3px 10px -5px black;
+  -moz-box-shadow: inset 0 -3px 10px -5px black;
+  box-shadow: inset 0 -3px 10px -5px black;
+  color: #FFF;
+  text-shadow: 0 1px 1px black, 0 1px 10px black;
   text-align: center;
   font-weight: normal;
 }
-/* line 15, ../_sass/layout/_header.scss */
+/* line 14, ../_sass/layout/_header.scss */
 #vpm-banner a:hover {
   text-decoration: none;
-  background: #CCC;
 }
 
-/* line 22, ../_sass/layout/_header.scss */
+/* line 20, ../_sass/layout/_header.scss */
 #header {
   display: block;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
   margin: 20px;
 }
 
-/* line 29, ../_sass/layout/_header.scss */
+/* line 27, ../_sass/layout/_header.scss */
 #header-left_nav {
   float: left;
 }
-/* line 32, ../_sass/layout/_header.scss */
+/* line 30, ../_sass/layout/_header.scss */
 #header-left_nav h1 {
   display: inline;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 
-/* line 38, ../_sass/layout/_header.scss */
+/* line 36, ../_sass/layout/_header.scss */
 #splitter {
   color: #CCC;
   margin: 0 4px;
 }
 
-/* line 43, ../_sass/layout/_header.scss */
+/* line 41, ../_sass/layout/_header.scss */
 #header-post_nav {
   float: right;
   text-align: right;
 }
-/* line 47, ../_sass/layout/_header.scss */
+/* line 45, ../_sass/layout/_header.scss */
 #header-post_nav a {
   margin: 0 0 0 10px;
 }
