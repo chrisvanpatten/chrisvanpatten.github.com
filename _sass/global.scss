@@ -2,10 +2,9 @@
 @import "compass/typography/text";
 @import "misc/variables"; 
 
-@import "layout/header";
-
 body {
 	font: 15px/1.7 $body-font;
+	background: image-url('vpm-banner.jpg') top center no-repeat fixed;
 	margin: 0px;
 }
 
@@ -19,12 +18,24 @@ a {
 	}
 }
 
+@import "layout/banner";
+@import "layout/header";
+
+#wrapper {
+	padding: 20px;
+	margin: 53px 0 0;
+	background: #FFF;
+	@include box-shadow(0 10px 10px 10px #000);
+	position: relative;
+	z-index: 10;
+}
+
 #content {
 	max-width: 600px;
 	width: 70%;
 	min-width: 280px;
 	margin: 60px auto 130px;
-	padding: 20px;
+//	padding: 20px;
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $header-font;

@@ -8,19 +8,22 @@ homepage: true
 <html>
 {% include head.html %}
 <body>
-	{% include header.html %}
-	<div id="content">
-		<header>
-			<h1 id="logo">cvp vs. world</h1>
-		</header>
-		<ul id="posts">
-		{% for post in site.posts %}
-			<li>
-				<time>{{ post.date | date: "%d %b %Y" }}</time>
-				<a href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-		{% endfor %}
-		</ul>
+	{% include banner.html %}
+	<div id="wrapper">
+		{% include header.html %}
+		<div id="content">
+			<header>
+				<h1 id="logo">cvp vs. world</h1>
+			</header>
+			<ul id="posts">
+			{% for post in site.posts %}
+				<li>
+					<time>{{ post.date | date: "%d %b %Y" }}</time>
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
