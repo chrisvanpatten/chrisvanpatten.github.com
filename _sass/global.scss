@@ -6,7 +6,7 @@
 
 body {
 	font: 15px/1.7 $body-font;
-	margin: 20px;
+	margin: 0px;
 }
 
 a {
@@ -24,6 +24,7 @@ a {
 	width: 70%;
 	min-width: 280px;
 	margin: 90px auto 130px;
+	padding: 20px;
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: $header-font;

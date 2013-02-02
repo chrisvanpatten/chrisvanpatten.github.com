@@ -18,34 +18,55 @@
   zoom: 1;
 }
 
-/* line 1, ../_sass/layout/_header.scss */
+/* line 4, ../_sass/layout/_header.scss */
+#vpm-banner a {
+  display: block;
+  padding: 10px 8px;
+  background: #DDD;
+  border-bottom: #AAA;
+  -webkit-box-shadow: inset 0 -3px 10px -5px #333333;
+  -moz-box-shadow: inset 0 -3px 10px -5px #333333;
+  box-shadow: inset 0 -3px 10px -5px #333333;
+  color: #444;
+  text-shadow: 0 1px 1px white;
+  text-align: center;
+  font-weight: normal;
+}
+/* line 15, ../_sass/layout/_header.scss */
+#vpm-banner a:hover {
+  text-decoration: none;
+  background: #CCC;
+}
+
+/* line 22, ../_sass/layout/_header.scss */
 #header {
   display: block;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+  margin: 20px;
 }
 
-/* line 7, ../_sass/layout/_header.scss */
+/* line 29, ../_sass/layout/_header.scss */
 #header-left_nav {
   float: left;
 }
-/* line 10, ../_sass/layout/_header.scss */
+/* line 32, ../_sass/layout/_header.scss */
 #header-left_nav h1 {
   display: inline;
   font: 14px/1 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
 }
 
-/* line 16, ../_sass/layout/_header.scss */
+/* line 38, ../_sass/layout/_header.scss */
 #splitter {
   color: #CCC;
   margin: 0 4px;
 }
 
-/* line 21, ../_sass/layout/_header.scss */
+/* line 43, ../_sass/layout/_header.scss */
 #header-post_nav {
   float: right;
   text-align: right;
 }
-/* line 25, ../_sass/layout/_header.scss */
+/* line 47, ../_sass/layout/_header.scss */
 #header-post_nav a {
   margin: 0 0 0 10px;
 }
@@ -53,7 +74,7 @@
 /* line 7, ../_sass/global.scss */
 body {
   font: 15px/1.7 "proxima-nova", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
-  margin: 20px;
+  margin: 0px;
 }
 
 /* line 12, ../_sass/global.scss */
@@ -73,8 +94,9 @@ a:hover {
   width: 70%;
   min-width: 280px;
   margin: 90px auto 130px;
+  padding: 20px;
 }
-/* line 28, ../_sass/global.scss */
+/* line 29, ../_sass/global.scss */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-family: "ltc-bodoni-175", "Palatino Linotype", "Book Antiqua", "Palatino", Georgia, "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
   font-weight: normal;
@@ -82,7 +104,7 @@ a:hover {
   text-align: center;
   margin: 1em 0 0;
 }
-/* line 36, ../_sass/global.scss */
+/* line 37, ../_sass/global.scss */
 #content #logo, #content #post-title {
   margin: 0 0 70px;
   font-size: 42px;
@@ -106,7 +128,7 @@ a:hover {
   width: 20%;
   min-width: 110px;
   float: left;
-  font: 80% 'menlo', 'monaco', 'inconsolata', monospace;
+  font: 80% "menlo", "monaco", "inconsolata", monospace;
   line-height: inherit;
 }
 
@@ -126,7 +148,7 @@ a:hover {
 #post code {
   font-family: monospace;
   background: #F6F6F6;
-  border: 1px solid #DDD;
+  border: 1px solid #dddddd;
   padding: 3px 4px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
