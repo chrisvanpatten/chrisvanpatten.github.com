@@ -1,0 +1,33 @@
+#wrapper {
+	padding: 20px;
+	margin: 55px 0 0;
+	background: #FFF;
+	@include box-shadow(0 10px 10px 10px #000);
+	position: relative;
+	z-index: 10;
+
+	@media ( max-width: 600px ) {
+		margin: 0;
+	}
+}
+
+#content {
+	max-width: 600px;
+	width: 70%;
+	min-width: 280px;
+	margin: 60px auto 130px;
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: $header-font;
+		font-weight: normal;
+		line-height: 1.2;
+		text-align: center;
+		margin: 1em 0 0;
+	}
+
+	#logo, #post-title {
+		margin: 0 0 70px;
+		font-size: 42px;
+		color: #000;
+	}
+}

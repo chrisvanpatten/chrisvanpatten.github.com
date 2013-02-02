@@ -24,14 +24,20 @@ body {
   background: url('/images/vpm-banner.jpg?1359833241') top center no-repeat fixed;
   margin: 0px;
 }
+@media (max-width: 600px) {
+  /* line 5, ../_sass/global.scss */
+  body {
+    background-attachment: scroll;
+  }
+}
 
-/* line 11, ../_sass/global.scss */
+/* line 15, ../_sass/global.scss */
 a {
   color: black;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 16, ../_sass/global.scss */
+/* line 20, ../_sass/global.scss */
 a:hover {
   text-decoration: underline;
 }
@@ -43,7 +49,13 @@ a:hover {
   left: 0;
   right: 0;
 }
-/* line 7, ../_sass/layout/_banner.scss */
+@media (max-width: 600px) {
+  /* line 1, ../_sass/layout/_banner.scss */
+  #vpm-banner {
+    position: static;
+  }
+}
+/* line 11, ../_sass/layout/_banner.scss */
 #vpm-banner a {
   display: block;
   padding: 15px 8px;
@@ -52,7 +64,7 @@ a:hover {
   text-align: center;
   font-weight: normal;
 }
-/* line 15, ../_sass/layout/_banner.scss */
+/* line 19, ../_sass/layout/_banner.scss */
 #vpm-banner a:hover {
   text-decoration: none;
 }
@@ -89,7 +101,7 @@ a:hover {
   margin: 0 0 0 10px;
 }
 
-/* line 24, ../_sass/global.scss */
+/* line 1, ../_sass/layout/_content.scss */
 #wrapper {
   padding: 20px;
   margin: 55px 0 0;
@@ -100,15 +112,21 @@ a:hover {
   position: relative;
   z-index: 10;
 }
+@media (max-width: 600px) {
+  /* line 1, ../_sass/layout/_content.scss */
+  #wrapper {
+    margin: 0;
+  }
+}
 
-/* line 33, ../_sass/global.scss */
+/* line 14, ../_sass/layout/_content.scss */
 #content {
   max-width: 600px;
   width: 70%;
   min-width: 280px;
   margin: 60px auto 130px;
 }
-/* line 40, ../_sass/global.scss */
+/* line 20, ../_sass/layout/_content.scss */
 #content h1, #content h2, #content h3, #content h4, #content h5, #content h6 {
   font-family: "ltc-bodoni-175", "Palatino Linotype", "Book Antiqua", "Palatino", Georgia, "Times New Roman", Times, "Liberation Serif", FreeSerif, serif;
   font-weight: normal;
@@ -116,7 +134,7 @@ a:hover {
   text-align: center;
   margin: 1em 0 0;
 }
-/* line 48, ../_sass/global.scss */
+/* line 28, ../_sass/layout/_content.scss */
 #content #logo, #content #post-title {
   margin: 0 0 70px;
   font-size: 42px;

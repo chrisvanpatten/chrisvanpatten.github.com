@@ -4,6 +4,10 @@
 	left: 0;
 	right: 0;
 
+	@media ( max-width: 600px ) {
+		position: static;
+	}
+
 	a {
 		display: block;
 		padding: 15px 8px;
