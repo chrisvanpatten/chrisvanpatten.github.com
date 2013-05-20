@@ -58,7 +58,7 @@ a:hover {
 /* line 11, ../_sass/layout/_banner.scss */
 #vpm-banner a {
   display: block;
-  padding: 15px 20px;
+  padding: 20px;
   color: #FFF;
   text-shadow: 0 1px 1px black, 0 1px 10px black;
   text-align: center;
@@ -116,13 +116,13 @@ a:hover {
   width: 150px;
   height: 150px;
   line-height: 150px;
-  background: red;
   display: inline-block;
   -webkit-border-radius: 150px;
   -moz-border-radius: 150px;
   -ms-border-radius: 150px;
   -o-border-radius: 150px;
   border-radius: 150px;
+  background-color: black;
   background-size: cover;
   text-indent: 1000in;
   color: white;
@@ -130,9 +130,9 @@ a:hover {
 @media (max-width: 600px) {
   /* line 41, ../_sass/layout/_header.scss */
   .head-cvp, .head-world {
-    width: 110px;
-    height: 110px;
-    line-height: 110px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
   }
 }
 
@@ -155,7 +155,7 @@ a:hover {
 /* line 1, ../_sass/layout/_content.scss */
 #wrapper {
   padding: 20px;
-  margin: 55px 0 0;
+  margin: 65px 0 0;
   background: #FFF;
   -webkit-box-shadow: 0 10px 10px 10px black;
   -moz-box-shadow: 0 10px 10px 10px black;
