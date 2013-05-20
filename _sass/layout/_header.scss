@@ -31,3 +31,42 @@
 		}
 	//}
 }
+
+#logo {
+	@media ( max-width: 600px ) {
+		font-size: 32px !important;
+	}
+}
+
+.head-cvp, .head-world {
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background: red;
+	display: inline-block;
+	@include border-radius(150px);
+	background-size: cover;
+	text-indent: 1000in;
+	color: white;
+
+	@media ( max-width: 600px ) {
+		width: 110px;
+		height: 110px;
+		line-height: 110px;
+	}
+}
+
+#logo:hover {
+	.head-cvp, .head-world {
+		background: black;
+		text-indent: 0;
+	}
+}
+
+.head-cvp {
+	background-image: image-url('cvp.jpg');
+}
+
+.head-world {
+	background-image: image-url('world.jpg');
+}
