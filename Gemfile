@@ -1,7 +1,7 @@
-source :rubygems
+source "https://rubygems.org"
 
 group :website do
   gem "compass"
-  gem "jekyll", "0.11.0"
+  gem "jekyll"
   gem "liquid", "2.2.2"
 end

@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     albino (1.3.3)
       posix-spawn (>= 0.3.6)
@@ -33,5 +33,5 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  jekyll (= 0.11.0)
+  jekyll
   liquid (= 2.2.2)
