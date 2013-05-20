@@ -125,6 +125,7 @@ a:hover {
   background-color: black;
   background-size: cover;
   text-indent: 1000in;
+  overflow: hidden;
   color: white;
 }
 @media (max-width: 600px) {
@@ -136,18 +137,18 @@ a:hover {
   }
 }
 
-/* line 60, ../_sass/layout/_header.scss */
+/* line 61, ../_sass/layout/_header.scss */
 #logo:hover .head-cvp, #logo:hover .head-world {
   background: black;
   text-indent: 0;
 }
 
-/* line 66, ../_sass/layout/_header.scss */
+/* line 67, ../_sass/layout/_header.scss */
 .head-cvp {
   background-image: url('/images/cvp.jpg?1369090355');
 }
 
-/* line 70, ../_sass/layout/_header.scss */
+/* line 71, ../_sass/layout/_header.scss */
 .head-world {
   background-image: url('/images/world.jpg?1369091079');
 }
