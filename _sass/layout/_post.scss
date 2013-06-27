@@ -19,6 +19,7 @@
 	}
 
 	ol, ul {
+		padding: 0;
 		li {
 			margin: 5px 0;
 		}
@@ -29,7 +30,7 @@
 	}
 
 	ul {
-		list-style: disc;
+		list-style: square;
 	}
 
 	blockquote {
@@ -37,5 +38,15 @@
 		margin-left: 20px;
 		border-left: 2px dotted darken(#F6EFEF, 5%);
 		font-style: italic;
+	}
+
+	a {
+		color: mix( lighten( blue, 20% ), black, 50% );
+
+		&:active {
+			color: white;
+			background: mix( lighten( blue, 20% ), black, 50% );
+			text-decoration: none;
+		}
 	}
 }

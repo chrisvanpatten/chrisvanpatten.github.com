@@ -240,22 +240,36 @@ a:hover {
   border-radius: 2px;
   font-size: 95%;
 }
-/* line 22, ../_sass/layout/_post.scss */
+/* line 21, ../_sass/layout/_post.scss */
+#post ol, #post ul {
+  padding: 0;
+}
+/* line 23, ../_sass/layout/_post.scss */
 #post ol li, #post ul li {
   margin: 5px 0;
 }
-/* line 27, ../_sass/layout/_post.scss */
+/* line 28, ../_sass/layout/_post.scss */
 #post ol {
   list-style: lower-roman;
 }
-/* line 31, ../_sass/layout/_post.scss */
+/* line 32, ../_sass/layout/_post.scss */
 #post ul {
-  list-style: disc;
+  list-style: square;
 }
-/* line 35, ../_sass/layout/_post.scss */
+/* line 36, ../_sass/layout/_post.scss */
 #post blockquote {
   padding: 0 20px 0 18px;
   margin-left: 20px;
   border-left: 2px dotted #eddfdf;
   font-style: italic;
+}
+/* line 43, ../_sass/layout/_post.scss */
+#post a {
+  color: #33337f;
+}
+/* line 46, ../_sass/layout/_post.scss */
+#post a:active {
+  color: white;
+  background: #33337f;
+  text-decoration: none;
 }
