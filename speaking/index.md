@@ -13,7 +13,7 @@ Everything Chris Van Patten talks about is focused on simplifying: how web desig
 
 Chris's background in the theatre (he has a degree in it) means every talk is engaging, intimate, and inspiring. Every talk is designed to contain a Q&A component, giving your audience an opportunity to talk back and engage deeper.
 
-Chris has spoken at multiple BarCamps, WordCamps, meetup groups, and more. [See a full list below.](#past-talks)
+Chris has spoken at multiple BarCamps, WordCamps, meetup groups, and more. [See a full list below.](#past_talks)
 
 <iframe src="https://docs.google.com/forms/d/1WyXZqxGAVqowEfoaXjMTEZgTwPhlhLRtzo3Eu-uf4n0/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
