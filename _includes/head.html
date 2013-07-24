@@ -29,9 +29,7 @@
 	{% if site.owner_link %}<meta property="article:author" content="{{ site.owner_link }}">{% endif %}
 	
 	<!-- og:description / meta description -->
-	{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt }}">
-	<meta name="description" content="{{ page.excerpt }}">
-	{% elsif page.homepage %}<meta property="og:description" content="{{ site.description }}">
+	{% if page.homepage %}<meta property="og:description" content="{{ site.description }}">
 	<meta name="description" content="{{ site.description }}">
 	{% elsif page.content %}<meta property="og:description" content="{{ page.content markdownify | strip_html | truncatewords:20 }}...">
 	<meta name="description" content="{{ page.content | markdownify | strip_html | truncatewords:20 }}...">
