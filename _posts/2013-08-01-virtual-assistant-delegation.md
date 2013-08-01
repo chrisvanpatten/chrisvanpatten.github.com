@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using your Virtual Assistant: Delegation 101
+title: Using your Virtual Assistant - Delegation 101
 ---
 
 So after a lengthy process, you finally [hired your virtual assistant](http://www.chrisvanpatten.com/blog/2013/06/hiring-your-first-virtual-assistant/) (following the advice in my last post on the subject). The big question now is "what next?"
